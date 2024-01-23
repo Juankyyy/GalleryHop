@@ -1,11 +1,20 @@
 {
-    "users" : [
-        {
-            "usuario" : "Juanky",
-            "password" : "juankyy23",
-            "email" : "camilo_J@gmail.com",
-            "celular" : "3000000000",
-            "birthday" : "03/02/2005"
-        }
-    ]
+  "users": [
+    {
+      "usser": "Juanky",
+      "password": "juankyy23",
+      "email": "camilo_J@gmail.com",
+      "phone": "3000000000",
+      "birthday": "03-02-2005",
+      "id": "ead9"
+    },
+    {
+      "id": "cd5d",
+      "usser": "Wilmar",
+      "password": "wilmarp6",
+      "email": "puerta_W@gmail.com",
+      "phone": "3111111111",
+      "birthday": "14-05-2003"
+    }
+  ]
 }
