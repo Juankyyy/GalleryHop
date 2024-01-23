@@ -1,0 +1,11 @@
+{
+    "users" : [
+        {
+            "usuario" : "Juanky",
+            "password" : "juankyy23",
+            "email" : "camilo_J@gmail.com",
+            "celular" : "3000000000",
+            "birthday" : "03/02/2005"
+        }
+    ]
+}
