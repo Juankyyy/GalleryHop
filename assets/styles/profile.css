@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: #FFF9F6;
+}
+
+.info {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #000;
+    width: 400px;
+    height: 100dvh;
+}
+
+.info-content {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-name {
+    margin-bottom: 25px;
+}
+
+.info-img img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card {
+    padding: 5px 10px;
+    background-color: #D9D9D9;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.brushes {
+    background: linear-gradient(90deg, #00a3ff 0%, #007cc2 15%, #006ca9 47%, #006096 94%);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.stadistics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
