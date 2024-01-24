@@ -14,21 +14,23 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-right: 1px solid #000;
     width: 400px;
     height: 100dvh;
 }
 
 .info-content {
-    width: 335px;
+    /* width: 335px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 .info-name {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .info-img img {
@@ -60,7 +62,6 @@ body {
     border-radius: 50px;
     color: #fff;
     font-weight: bold;
-    margin-top: 15px;
 }
 
 .stadistics {
@@ -71,7 +72,23 @@ body {
 }
 
 .bio {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     gap: 25px;
+}
+
+.social {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 15px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
