@@ -7,6 +7,7 @@
       "email": "camilo_J@gmail.com",
       "phone": "3000000000",
       "birthday": "03-02-2005",
+      "money": "22",
       "posts": [
         {
           "id": "1c1",
@@ -27,6 +28,7 @@
       "email": "puerta_W@gmail.com",
       "phone": "3111111111",
       "birthday": "14-05-2003",
+      "money": "10",
       "posts": [
         {
           "id": "1i2",
@@ -47,6 +49,7 @@
       "email": "carlos_A@gmail.com",
       "phone": "3222222222",
       "birthday": "08-06-2000",
+      "money": "35",
       "posts": []
     },
     {
@@ -56,6 +59,7 @@
       "email": "fish_Y@gmail.com",
       "phone": "3333333333",
       "birthday": "24-11-2002",
+      "money": "128",
       "posts": []
     }
   ],
