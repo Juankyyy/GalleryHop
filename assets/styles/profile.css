@@ -1,34 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
     background-color: #FFF9F6;
 }
 
+main {
+    display: flex;
+}
+
 .info {
-    position: fixed;
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-right: 1px solid #000;
     width: 400px;
     height: 100dvh;
 }
 
 .info-content {
-    width: 335px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+}
+
+.info-config {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    top: 5px;
+    right: 10px;
 }
 
 .info-name {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .info-img img {
@@ -60,18 +73,91 @@ body {
     border-radius: 50px;
     color: #fff;
     font-weight: bold;
-    margin-top: 15px;
 }
 
 .stadistics {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .bio {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     gap: 25px;
+}
+
+.social {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 15px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.gallery-content {
+    width: 60dvw;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #D9D9D9;
+    border-radius: 7px;
+    transition: filter 0.3s;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.btn-creations {
+    background-color: #0038FF;
+    color: #fff;
+}
+
+.creations-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0px 5px;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+}
+
+.sort:hover {
+    background-color: #D9D9D9;
 }
