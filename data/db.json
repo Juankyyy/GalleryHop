@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "ead9",
+      "username": "Juanky",
+      "password": "juankyy23",
+      "email": "camilo_J@gmail.com",
+      "phone": "3000000000",
+      "birthday": "03-02-2005",
+      "money": "22",
+      "posts": [
+        {
+          "id": "1c1",
+          "image": "../img/catattention.jpg",
+          "name": "Ejemplo",
+          "post_date": "23-01-2024",
+          "description": "example",
+          "price": "5",
+          "art_type": "Acuarela",
+          "votes": "10"
+        }
+      ]
+    },
+    {
+      "id": "cd5d",
+      "username": "Wilmar",
+      "password": "wilmarp6",
+      "email": "puerta_W@gmail.com",
+      "phone": "3111111111",
+      "birthday": "14-05-2003",
+      "money": "10",
+      "posts": [
+        {
+          "id": "1i2",
+          "image": "../img/IFOUND.jpg",
+          "name": "Ejemplo2",
+          "post_date": "23-01-2024",
+          "description": "example 2",
+          "price": "6",
+          "art_type": "Acrilicos",
+          "votes": "8"
+        }
+      ]
+    },
+    {
+      "id": "79be",
+      "username": "Anthony",
+      "password": "antonie39",
+      "email": "carlos_A@gmail.com",
+      "phone": "3222222222",
+      "birthday": "08-06-2000",
+      "money": "35",
+      "posts": []
+    },
+    {
+      "id": "5921",
+      "username": "Yacky Fishbone",
+      "password": "yaco24fish",
+      "email": "fish_Y@gmail.com",
+      "phone": "3333333333",
+      "birthday": "24-11-2002",
+      "money": "128",
+      "posts": []
+    }
+  ],
+  "likes": [
+    {
+      "id": "91eb",
+      "ead9": [
+        "1i2",
+        "1c1",
+        "79be"
+      ]
+    },
+    {
+      "id": "1572",
+      "cd5d": [
+        "1c1",
+        "79be",
+        "5921"
+      ]
+    }
+  ],
+  "bids": [
+    {
+      "id": "2d6f",
+      "state": "active",
+      "finish_date": "27-01-2024",
+      "finish_hour": "02:45pm",
+      "bid": [
+        {
+          "iduser": "ead9",
+          "money": "8",
+          "artwork": "1i2"
+        },
+        {
+          "iduser": "79be",
+          "money": "10",
+          "artwork": "1i2"
+        }
+      ]
+    }
+  ]
+}
