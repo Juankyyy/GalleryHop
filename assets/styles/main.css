@@ -9,9 +9,10 @@
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
+/* --- --- --- NAVBAR --- --- --- */
 .header {
     display: flex;
     justify-content: center;
@@ -23,10 +24,14 @@ a {
     justify-content: space-between;
     background-color: #122733;
     color: #fff;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 8px 10px;
     border-radius: 10px;
     width: 95dvw;
+}
+
+.navbar a {
+    color: #fff;
 }
 
 .navbar-left {
@@ -45,6 +50,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #2A4250;
+    border: 3px solid #122733;
     border-radius: 5px;
     padding: 5px 10px;
     gap: 5px;
@@ -54,7 +60,7 @@ a {
 
 .navbar-item:hover {
     background-color: #122733;
-    border: 2px solid #2A4250;
+    border: 3px solid #2A4250;
 }
 
 .navbar-search {
@@ -97,5 +103,18 @@ a {
 }
 
 .navbar-icon:hover {
-    background-color: #3A5261;
+    background-color: #2A4250;
+}
+
+.landing-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 90dvh;
+}
+
+.logo-text img {
+    width: 500px;
 }
