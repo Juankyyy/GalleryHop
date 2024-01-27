@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,14 +15,114 @@ main {
     display: flex;
 }
 
+/* --- --- --- NAVBAR --- --- --- */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #122733;
+    color: #fff;
+    margin-top: 5px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    width: 95dvw;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-logo {
+    margin-right: 10px;
+    line-height: 0px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A4250;
+    border: 3px solid #122733;
+    border-radius: 5px;
+    padding: 5px 10px;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: #122733;
+    border: 3px solid #2A4250;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border: 2px solid #3A5261;
+    border-radius: 50px;
+}
+
+.navbar-search-input {
+    background-color: #122733;
+    color: #fff;
+    border: none;
+    width: 150px;
+}
+
+.navbar-search-input:focus {
+    outline: none;
+}
+
+.navbar-search-input::placeholder {
+    color: #fff;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-icon {
+    cursor: pointer;
+    line-height: 0px;
+    padding: 3px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-icon:hover {
+    background-color: #2A4250;
+}
+
+/* --- --- --- INFO --- --- --- */
 .info {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #000;
-    width: 400px;
-    height: 100dvh;
+    border-right: 2px solid #a3a3a3;
+    width: 300px;
 }
 
 .info-content {
@@ -36,16 +137,22 @@ main {
     position: absolute;
     display: flex;
     gap: 5px;
-    top: 5px;
+    top: 0px;
     right: 10px;
 }
 
-.info-name {
-    margin-bottom: 10px;
+.info-config svg {
+    transition: all 0.3s;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.info-config svg:hover {
+    transform: scale(1.1);
 }
 
 .info-img img {
-    width: 250px;
+    width: 200px;
     border-radius: 20px;
 }
 
@@ -58,9 +165,9 @@ main {
 }
 
 .card {
-    padding: 5px 10px;
+    line-height: 18px;
+    padding: 5px 20px;
     background-color: #D9D9D9;
-    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +180,7 @@ main {
     border-radius: 50px;
     color: #fff;
     font-weight: bold;
+    width: 60%;
 }
 
 .stadistics {
@@ -84,25 +192,31 @@ main {
 }
 
 .bio {
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    gap: 25px;
+    gap: 10px;
 }
 
 .social {
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social-card {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.social-card a {
+    transition: all 0.3s;
+}
+
+.social-card a:hover {
+    color: #0038FF;
 }
 
 .gallery {
@@ -112,9 +226,9 @@ main {
 }
 
 .gallery-content {
-    width: 60dvw;
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
 }
 
 .menu {
