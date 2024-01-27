@@ -4,14 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="../assets/js/login.js" defer></script>
-    <link rel="shortcut icon" href="https://i.postimg.cc/KY4cbJws/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/styles/login.css">
     <title>Login | Gallery Hop</title>
 </head>
 
 <body>
-
+    <div class="countainer_Son">
+        <div class="logo">
+            <img src="../assets/img/LogoWhite.png" alt="">
+        </div>
+        <div class="countainer_Son2">
+            <div class="gallery">
+                <img src="../assets/img/GHTextWhite.png" alt="">
+            </div>
+            <div class="main ">
+                <input type="checkbox" id="chk" aria-hidden="true">
+                <div class="signup">
+                    <form>
+                        <label class="label" for="chk" aria hidden="true">Inicio de sesion</label>
+                        <input class="input" type="text" name="txt" placeholder="Nombre" required="">
+                        <input class="input" type="password" name="pswd" placeholder="Contraseña" required="">
+                        <button>Inicio de sesion</button>
+                    </form>
+                </div>
+                <div class="login">
+                    <form>
+                        <label class="label2" for="chk" aria-hidden="true">Registrate</label>
+                        <input type="text" name="txt" placeholder="Nombre" required="">
+                        <input type="email" name="email" placeholder="Correo" required="">
+                        <input type="password" name="pswd" placeholder="Contraseña" required="">
+                        <input type="tel" name="tel" placeholder="Telefono" required="">
+                        <input type="date" name="date" required="">
+                        <div class="terminos">
+                            <input class="checkbox" type="checkbox" name="check" required="">
+                            <p>Aceptas terminos y condiciones</p>
+                        </div>
+                        <button class="btn">Registrate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
