@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/login.css">
+    <script src="../assets/js/login.js" defer></script>
     <title>Login | Gallery Hop</title>
 </head>
 
@@ -20,27 +21,25 @@
             <div class="main ">
                 <input type="checkbox" id="chk" aria-hidden="true">
                 <div class="signup">
-                    <form>
-                        <label class="label" for="chk" aria hidden="true">Inicio de sesion</label>
-                        <input class="input" type="text" name="txt" placeholder="Nombre" required="">
-                        <input class="input" type="password" name="pswd" placeholder="Contraseña" required="">
-                        <button>Inicio de sesion</button>
-                    </form>
+                    <label class="label" for="chk" aria hidden="true">Inicio de sesion</label>
+                    <input id="name-input-login" class="input" type="text" name="txt" placeholder="Nombre" required="">
+                    <input id="password-input-login" class="input" type="password" name="pswd" placeholder="Contraseña" required="">
+                    <p id="avisoLogIn"></p>
+                    <button id="btnLogin">Inicio de sesion</button>
                 </div>
                 <div class="login">
-                    <form>
-                        <label class="label2" for="chk" aria-hidden="true">Registrate</label>
-                        <input type="text" name="txt" placeholder="Nombre" required="">
-                        <input type="email" name="email" placeholder="Correo" required="">
-                        <input type="password" name="pswd" placeholder="Contraseña" required="">
-                        <input type="tel" name="tel" placeholder="Telefono" required="">
-                        <input type="date" name="date" required="">
+                    <label class="label2" for="chk" aria-hidden="true">Registrate</label>
+                        <input id="name-input-signup" type="text" name="txt" placeholder="Nombre" required="">
+                        <input id="email-input-signup" type="email" name="email" placeholder="Correo" required="">
+                        <input id="password-input-signup" type="password" name="pswd" placeholder="Contraseña" required="">
+                        <input id="phone-input-signup" type="tel" name="tel" placeholder="Telefono" required="">
+                        <input id="date-input-signup" type="date" name="date" required="">
                         <div class="terminos">
-                            <input class="checkbox" type="checkbox" name="check" required="">
+                            <input id="checkbox" class="checkbox" type="checkbox" name="check" required="">
                             <p>Aceptas terminos y condiciones</p>
                         </div>
-                        <button class="btn">Registrate</button>
-                    </form>
+                        <p id="avisoSignUp"></p>
+                        <button id="btnRegistro" class="btn">Registrate</button>
                 </div>
             </div>
         </div>
