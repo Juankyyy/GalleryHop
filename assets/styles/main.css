@@ -173,26 +173,55 @@ a {
 
 /* --- --- --- Categories --- --- --- */
 
+.categories {
+    display: flex;
+    justify-content: center;
+    height: 100dvh; 
+}
+
 .category1 {
     background-image: url(https://i.postimg.cc/TPJDmn5n/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.5);
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    position: relative;
+}
+
+.category1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #00000057;
+    z-index: -1;
 }
 
 .category-title {
     margin-top: 30px;
     color: #fff;
-
 }
 
 .category2 {
     background-image: url(https://i.postimg.cc/B6Fg5fdX/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.5);
-    height: 100dvh;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    position: relative;
+}
+
+.category2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #00000057;
+    z-index: -1;
 }
