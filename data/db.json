@@ -7,7 +7,7 @@
       "email": "camilo_J@gmail.com",
       "phone": "3000000000",
       "birthday": "03-02-2005",
-      "money": "22",
+      "money": 22,
       "posts": [
         {
           "id": "1c1",
@@ -28,7 +28,7 @@
       "email": "puerta_W@gmail.com",
       "phone": "3111111111",
       "birthday": "14-05-2003",
-      "money": "10",
+      "money": 10,
       "posts": [
         {
           "id": "1i2",
@@ -44,7 +44,7 @@
           "id": "2a2",
           "image": "../img/Acuarela2.jpg",
           "name": "Acuarela 2",
-          "post_date":"26-01-2024",
+          "post_date": "26-01-2024",
           "description": "Trabajo de acuarela #2",
           "price": "10",
           "art_type": "Acuarela",
@@ -59,7 +59,7 @@
       "email": "carlos_A@gmail.com",
       "phone": "3222222222",
       "birthday": "08-06-2000",
-      "money": "35",
+      "money": 35,
       "posts": []
     },
     {
@@ -69,7 +69,17 @@
       "email": "fish_Y@gmail.com",
       "phone": "3333333333",
       "birthday": "24-11-2002",
-      "money": "128",
+      "money": 128,
+      "posts": []
+    },
+    {
+      "id": "52c9",
+      "username": "Ananías",
+      "password": "amychelle190905",
+      "email": "amychelleoropezaortiz@gmail.com",
+      "phone": "3053098484",
+      "birthday": "2005-09-19",
+      "money": 0,
       "posts": []
     }
   ],
@@ -78,12 +88,14 @@
       "ead9": [
         "1i2",
         "1c1"
-      ]
+      ],
+      "id": "e979"
     },
     {
       "5921": [
         "1i2"
-      ]
+      ],
+      "id": "ba58"
     }
   ],
   "likes": [
