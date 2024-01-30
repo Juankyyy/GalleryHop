@@ -39,6 +39,16 @@
           "price": "6",
           "art_type": "Acrilicos",
           "votes": "8"
+        },
+        {
+          "id": "2a2",
+          "image": "../img/Acuarela2.jpg",
+          "name": "Acuarela 2",
+          "post_date":"26-01-2024",
+          "description": "Trabajo de acuarela #2",
+          "price": "10",
+          "art_type": "Acuarela",
+          "votes": "36"
         }
       ]
     },
@@ -63,21 +73,31 @@
       "posts": []
     }
   ],
+  "favorites": [
+    {
+      "ead9": [
+        "1i2",
+        "1c1"
+      ]
+    },
+    {
+      "5921": [
+        "1i2"
+      ]
+    }
+  ],
   "likes": [
     {
       "id": "91eb",
       "ead9": [
         "1i2",
-        "1c1",
-        "79be"
+        "1c1"
       ]
     },
     {
       "id": "1572",
       "cd5d": [
-        "1c1",
-        "79be",
-        "5921"
+        "1c1"
       ]
     }
   ],
