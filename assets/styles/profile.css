@@ -123,6 +123,7 @@ a {
     justify-content: center;
     border-right: 2px solid #a3a3a3;
     width: 300px;
+    height: 90dvh;
 }
 
 .info-content {
