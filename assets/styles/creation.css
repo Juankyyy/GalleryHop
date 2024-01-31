@@ -1,16 +1,16 @@
-body{
+body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn-newCreation{
+.btn-newCreation {
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
     background-color: #57E194;
@@ -19,7 +19,7 @@ main{
     cursor: pointer;
 }
 
-.drag-image{
+.drag-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,14 +28,14 @@ main{
     border-radius: 10px 10px 0 0;
     border: 5px solid rgb(168, 168, 168);
     border-style: dashed;
-    padding: 20px 50px;
+    padding: 20px 100px;
 }
 
-.drag-image a{
+.drag-image a {
     color: #00A3FF;
 }
 
-.form-creation{
+.form-creation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,17 +44,51 @@ main{
     border-radius: 0 0 10px 10px;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
 
-label{
+.container-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: minmax(5px, auto);
+    gap: 5px;
+    grid-auto-flow: dense;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.container-categories p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A4250;
+    border: 3px solid #122733;
+    border-radius: 20px;
+    padding: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    /* width: 100%; */
+    font-size: 10px;
+}
+
+.container-categories p:hover {
+    background-color: #122733;
+    border: 3px solid #2A4250;
+}
+
+
+label {
     margin: 5px 0 5px 0;
     color: white;
 }
-.input-black{
+
+.input-black {
     outline: none;
     border-radius: 5px;
     padding: 10px;
@@ -63,11 +97,11 @@ label{
     color: rgb(220, 220, 220);
 }
 
-textarea{
+textarea {
     max-width: 100%;
 }
 
-.inputs{
+.inputs {
     height: 35px;
     width: 100%;
 }
