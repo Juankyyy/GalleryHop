@@ -155,7 +155,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 92dvh;
+    height: 94dvh;
     position: relative;
 }
 
@@ -232,11 +232,23 @@ a {
     align-self: flex-start;
 }
 
+.slider {
+    display: flex;
+    gap: 5px;
+}
+
 .slider img {
+    cursor: zoom-in;
     width: 23dvw;
+    max-width: 320px;
     height: 180px;
     border-radius: 3px;
     object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.slider img:hover {
+    filter: brightness(0.8);
 }
 
 /* --- --- --- MEDIA Q --- --- --- */
@@ -250,6 +262,10 @@ a {
     .navbar-dark,
     .navbar-language {
         display: none;
+    }
+
+    .slider img {
+        height: 130px;
     }
 }
 
@@ -266,6 +282,10 @@ a {
 
     .quoute h1 {
         font-size: 16px;
+    }
+
+    .slider img {
+        height: 100px;
     }
 }
 
