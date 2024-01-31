@@ -16,6 +16,10 @@ a {
     color: #000;
 }
 
+.hidden {
+    display: none;
+}
+
 /* --- --- --- NAVBAR --- --- --- */
 .header {
     display: flex;
@@ -31,6 +35,7 @@ a {
     margin-top: 5px;
     padding: 8px 10px;
     border-radius: 10px;
+    height: 54px;
     width: 95dvw;
 }
 
@@ -122,7 +127,7 @@ a {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: #769db4;
+    background-color: #fff;
     border-radius: 5px;
     margin-top: 6px;
     transform-origin: 0px 100%;
@@ -135,7 +140,7 @@ a {
 
 .activemenu-bars-2 {
     opacity: 0;
-    margin-left: -30px;
+    margin-left: -35px;
 }
 
 .activemenu-bars-3 {
@@ -156,51 +161,6 @@ a {
 
 .logo-text img {
     width: 500px;
-}
-
-
-.artwork {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.artwork img {
-    border-radius: 10px;
-    width: 350px;
-    position: absolute;
-    z-index: -1;
-}
-
-.artwork img:nth-child(1) {
-    transform: rotate(15deg);
-    bottom: 300px;
-    left: 0px;
-}
-
-.artwork img:nth-child(2) {
-    transform: rotate(-10deg);
-    bottom: 0px;
-    left: 0px;
-}
-
-.artwork img:nth-child(3) {
-    transform: rotate(10deg);
-    bottom: 30px;
-    left: 550px;
-}
-
-.artwork img:nth-child(4) {
-    transform: rotate(-20deg);
-    bottom: 300px;
-    left: 76%;
-}
-
-.artwork img:nth-child(5) {
-    transform: rotate(-10deg);
-    bottom: 0px;
-    left: 73%;
 }
 
 /* --- --- --- Categories --- --- --- */
@@ -277,4 +237,48 @@ a {
     height: 180px;
     border-radius: 3px;
     object-fit: cover;
+}
+
+/* --- --- --- MEDIA Q --- --- --- */
+@media (max-width: 1000px) {
+    .hidden {
+        display: block;
+    }
+
+    .navbar-toplist,
+    .navbar-explore,
+    .navbar-dark,
+    .navbar-language {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .navbar-profile,
+    .navbar-login,
+    .navbar-submit {
+        display: none;
+    }
+    
+    .logo-text img {
+        width: 300px;
+    }
+
+    .quoute h1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-logo {
+        margin-right: 0px;
+    }
+
+    .navbar-left {
+        gap: 15px;
+    }
+
+    .navbar-search-input {
+        width: 77px;
+    }
 }
