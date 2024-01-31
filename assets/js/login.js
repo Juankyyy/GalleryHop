@@ -36,28 +36,50 @@ btnRegistro.addEventListener("click", function() {
     let checkbox = document.getElementById("checkbox").checked;
     let avisoSignUp = document.getElementById("avisoSignUp");
 
-    if (checkbox == true) {
-        fetch('http://localhost:3000/users', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username: nombreRegistro, password: passwordRegistro, email: emailRegistro, phone: phoneRegistro, birthday: dateRegistro, money: 0, posts:[]})
-        }).then(response=>{
-            return response.json();
-        }).then(data => {
-            console.log('Usuario registrado como:', data);
+    if (checkbox) {
+        fetch('http://localhost:3000/users')
+        .then(response => response.json())
+        .then(data => {
+            let ussernameExistent = data.find(users => users.username === nombreRegistro);
 
-            avisoSignUp.innerHTML = "";
-            location.href = "../index.html";
+            if (ussernameExistent) {
+                avisoSignUp.innerHTML = "Lo sentimos, pero ese nombre de usuario ya existe.";
+            } else {
+                let emailExistent = data.find(users => users.email === emailRegistro);
 
-            nombreRegistro = '';
-            passwordRegistro = '';
-            emailRegistro = '';
-            phoneRegistro = '';
-            dateRegistro = '';
+                if (emailExistent) {
+                    avisoSignUp.innerHTML = "Lo sentimos, pero este correo ya está registrado.";
+                } else {
+                    fetch('http://localhost:3000/users', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ 
+                            username: nombreRegistro, 
+                            password: passwordRegistro, 
+                            email: emailRegistro, 
+                            phone: phoneRegistro, 
+                            birthday: dateRegistro, 
+                            money: 0, 
+                            posts: []
+                        })
+                    }).then(response => response.json())
+                    .then(data => {
+                        console.log('Usuario registrado como:', data);
+                        avisoSignUp.innerHTML = "";
+                        location.href = "../index.html";
+                        // Restablecer los valores a cadena vacía después del registro
+                        nombreRegistro = '';
+                        passwordRegistro = '';
+                        emailRegistro = '';
+                        phoneRegistro = '';
+                        dateRegistro = '';
+                    });
+                }
+            }
         });
     } else {
-        avisoSignUp.innerHTML = "Tienes que aceptar los terminos y condiciones."
+        avisoSignUp.innerHTML = "Tienes que aceptar los términos y condiciones.";
     }
 });
