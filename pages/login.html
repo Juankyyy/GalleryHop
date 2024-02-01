@@ -22,14 +22,15 @@
                     <h2>Inicio Sesion</h2>
                     <form action="">
                         <div class="input-box">
-                            <input type="text" required>
+                            <input id="name-input-login" type="text" required>
                             <label>Nombre de usuario</label>
                         </div>
                         <div class="input-box">
-                            <input type="password" required>
+                            <input id="password-input-login" type="password" required>
                             <label>Contraseña</label>
                         </div>
-                        <button type="submit" class="btn">Iniciar Sesion</button>
+                        <p id="avisoLogIn"></p>
+                        <button id="btnLogin" type="submit" class="btn">Iniciar Sesion</button>
                         <div class="login-register">
                             <p>¿No tienes una cuenta?</p>
                             <p><a href="" class="register-link">Registrarse</a></p>
@@ -40,32 +41,33 @@
                     <h2>Registrate</h2>
                     <form action="">
                         <div class="input-box">
-                            <input type="text" required>
+                            <input id="name-input-signup" type="text" required>
                             <label>Nombre de usuario</label>
                         </div>
                         <div class="input-box">
-                            <input type="password" required>
+                            <input id="password-input-signup" type="password" required>
                             <label>Contraseña</label>
                         </div>
                         <div class="input-box">
-                            <input type="email" required>
+                            <input id="email-input-signup" type="email" required>
                             <label>Correo</label>
                         </div>
                         <div class="input-box">
-                            <input type="tel" required>
+                            <input id="phone-input-signup" type="tel" required>
                             <label>Celular</label>
                         </div>
                         <div class="input-box">
-                            <input class="date" type="date" required>
+                            <input id="date-input-signup" class="date" type="date" required>
                         </div>
                         <div class="accept-polity">
-                            <input type="checkbox" required>
+                            <input id="checkbox" type="checkbox" required>
                             <label><a
                                     href="https://drive.google.com/file/d/1BUXoEe1GtgYexlrvzMN9nfQIBJ8cPyzI/view?usp=drive_link"
                                     target="_blank">Aceptar
                                     politicas</a></label>
                         </div>
-                        <button type="submit" class="btn">Registrarse</button>
+                        <p id="avisoSignUp"></p>
+                        <button id="btnRegistro" type="submit" class="btn">Registrarse</button>
                         <div class="login-register">
                             <p>No tiene una cuenta registrada? </p>
                             <p><a href="" class="login-link">Inicio Sesion</a></p>
