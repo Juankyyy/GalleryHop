@@ -37,6 +37,7 @@ a {
     border-radius: 10px;
     height: 54px;
     width: 95dvw;
+    overflow-x: hidden;
 }
 
 .navbar a {
@@ -117,10 +118,34 @@ a {
 
 /* --- MENU --- */
 
+.menu-content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #122733;
+    height: 100dvh;
+    width: 30dvw;
+    top: 5px;
+    right: 0px;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.menu-bars-hide {
+    display: none;
+}
+
+.menu-content-hide {
+    right: -100% !important;
+}
+
 .menu-bars {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .menu-bars span {
@@ -157,6 +182,7 @@ a {
     gap: 20px;
     height: 94dvh;
     position: relative;
+    z-index: -2;
 }
 
 .logo-text img {
@@ -253,7 +279,7 @@ a {
 
 /* --- --- --- MEDIA Q --- --- --- */
 @media (max-width: 1000px) {
-    .hidden {
+    .menu-bars {
         display: block;
     }
 
@@ -270,9 +296,9 @@ a {
 }
 
 @media (max-width: 730px) {
-    .navbar-profile,
-    .navbar-login,
-    .navbar-submit {
+    .navbar-profile-a,
+    .navbar-login-a,
+    .navbar-submit-a {
         display: none;
     }
     
@@ -286,6 +312,10 @@ a {
 
     .slider img {
         height: 100px;
+    }
+
+    .menu-content {
+        width: 60dvw;
     }
 }
 
