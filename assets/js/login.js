@@ -69,7 +69,7 @@ btnRegistro.addEventListener("click", function() {
                         console.log('Usuario registrado como:', data);
                         avisoSignUp.innerHTML = "";
                         location.href = "../index.html";
-                        // Restablecer los valores a cadena vacía después del registro
+                        
                         nombreRegistro = '';
                         passwordRegistro = '';
                         emailRegistro = '';
