@@ -148,7 +148,6 @@ a {
 
 .menu-bars {
     position: relative;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 6px;
@@ -170,8 +169,8 @@ a {
 
 .menu-fixed {
     position: fixed;
-    top: 15px;
-    right: 10px;
+    top: 17px;
+    right: 16px;
 }
 
 .activemenu-bars-1 {
