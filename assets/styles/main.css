@@ -16,6 +16,10 @@ a {
     color: #000;
 }
 
+.hidden {
+    display: none;
+}
+
 /* --- --- --- NAVBAR --- --- --- */
 .header {
     display: flex;
@@ -31,7 +35,9 @@ a {
     margin-top: 5px;
     padding: 8px 10px;
     border-radius: 10px;
+    height: 54px;
     width: 95dvw;
+    overflow-x: hidden;
 }
 
 .navbar a {
@@ -110,6 +116,81 @@ a {
     background-color: #2A4250;
 }
 
+/* --- MENU --- */
+
+.menu-content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #122733;
+    height: 100dvh;
+    width: 30dvw;
+    top: 0px;
+    right: 0px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.menu-shadow {
+    box-shadow: 0px 0px 0px 100vmax #00000063;
+}
+
+.menu-bars-hide {
+    display: none;
+}
+
+.menu-content-hide {
+    right: -100% !important;
+}
+
+.menu-bars {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-bars span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform-origin: 0px 100%;
+    transition: all 0.3s;
+}
+
+.menu-fixed {
+    position: fixed;
+    top: 17px;
+    right: 16px;
+}
+
+.activemenu-bars-1 {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activemenu-bars-2 {
+    opacity: 0;
+    margin-left: -35px;
+}
+
+.activemenu-bars-3 {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.menu-icons {
+    display: flex;
+    gap: 10px;
+}
+
 /* --- --- --- LANDING --- --- --- */
 
 .landing-text {
@@ -118,65 +199,24 @@ a {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 92dvh;
+    height: 94dvh;
     position: relative;
+    z-index: -2;
 }
 
 .logo-text img {
     width: 500px;
 }
 
-
-.artwork {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.artwork img {
-    border-radius: 10px;
-    width: 350px;
-    position: absolute;
-    z-index: -1;
-}
-
-.artwork img:nth-child(1) {
-    transform: rotate(15deg);
-    bottom: 300px;
-    left: 0px;
-}
-
-.artwork img:nth-child(2) {
-    transform: rotate(-10deg);
-    bottom: 0px;
-    left: 0px;
-}
-
-.artwork img:nth-child(3) {
-    transform: rotate(10deg);
-    bottom: 30px;
-    left: 550px;
-}
-
-.artwork img:nth-child(4) {
-    transform: rotate(-20deg);
-    bottom: 300px;
-    left: 76%;
-}
-
-.artwork img:nth-child(5) {
-    transform: rotate(-10deg);
-    bottom: 0px;
-    left: 73%;
-}
-
 /* --- --- --- Categories --- --- --- */
 
 .categories {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 100dvh; 
+    color: #fff;
 }
 
 .category1 {
@@ -196,13 +236,12 @@ a {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background-color: #00000057;
+    background-color: #000000af;
     z-index: -1;
 }
 
-.category-title {
+.category1-title {
     margin-top: 30px;
-    color: #fff;
 }
 
 .category2 {
@@ -222,6 +261,93 @@ a {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background-color: #00000057;
+    background-color: #000000af;
     z-index: -1;
+}   
+
+.categories-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100dvh;
+}
+
+.subtitle {
+    align-self: flex-start;
+}
+
+.slider {
+    display: flex;
+    gap: 5px;
+}
+
+.slider img {
+    cursor: zoom-in;
+    width: 23dvw;
+    max-width: 320px;
+    height: 180px;
+    border-radius: 3px;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.slider img:hover {
+    filter: brightness(0.8);
+}
+
+/* --- --- --- MEDIA Q --- --- --- */
+@media (max-width: 1000px) {
+    .menu-bars {
+        display: flex;
+    }
+
+    .navbar-toplist-a,
+    .navbar-explore-a,
+    .navbar-dark,
+    .navbar-language {
+        display: none;
+    }
+
+    .slider img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 730px) {
+    .navbar-profile-a,
+    .navbar-login-a,
+    .navbar-submit-a {
+        display: none;
+    }
+    
+    .logo-text img {
+        width: 300px;
+    }
+
+    .quoute h1 {
+        font-size: 16px;
+    }
+
+    .slider img {
+        height: 100px;
+    }
+
+    .menu-content {
+        width: 60dvw;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-logo {
+        margin-right: 0px;
+    }
+
+    .navbar-left {
+        gap: 15px;
+    }
+
+    .navbar-search-input {
+        width: 77px;
+    }
 }

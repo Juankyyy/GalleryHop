@@ -6,44 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/login.css">
     <script src="../assets/js/login.js" defer></script>
-    <title>Login | Gallery Hop</title>
+    <title>login</title>
 </head>
 
 <body>
-    <div class="countainer_Son">
-        <div class="logo">
-            <img src="../assets/img/LogoWhite.png" alt="">
-        </div>
-        <div class="countainer_Son2">
-            <div class="gallery">
+    <div class="container-father">
+    <div class="container">
+        
+        <div class="container-child">
+            <div class="img-galery">
                 <img src="../assets/img/GHTextWhite.png" alt="">
             </div>
-            <div class="main ">
-                <input type="checkbox" id="chk" aria-hidden="true">
-                <div class="signup">
-                    <label class="label" for="chk" aria hidden="true">Inicio de sesion</label>
-                    <input id="name-input-login" class="input" type="text" name="txt" placeholder="Nombre" required="">
-                    <input id="password-input-login" class="input" type="password" name="pswd" placeholder="Contraseña" required="">
-                    <p id="avisoLogIn"></p>
-                    <button id="btnLogin">Inicio de sesion</button>
-                </div>
-                <div class="login">
-                    <label class="label2" for="chk" aria-hidden="true">Registrate</label>
-                        <input id="name-input-signup" type="text" name="txt" placeholder="Nombre" required="">
-                        <input id="email-input-signup" type="email" name="email" placeholder="Correo" required="">
-                        <input id="password-input-signup" type="password" name="pswd" placeholder="Contraseña" required="">
-                        <input id="phone-input-signup" type="tel" name="tel" placeholder="Telefono" required="">
-                        <input id="date-input-signup" type="date" name="date" required="">
-                        <div class="terminos">
-                            <input id="checkbox" class="checkbox" type="checkbox" name="check" required="">
-                            <p>Aceptas terminos y condiciones</p>
+            <div class="wrapper">
+                <div class="form-box login">
+                    <h2>Inicio Sesion</h2>
+                    <form action="">
+                        <div class="input-box">
+                            <input type="text" required>
+                            <label>Nombre de usuario</label>
                         </div>
-                        <p id="avisoSignUp"></p>
-                        <button id="btnRegistro" class="btn">Registrate</button>
+                        <div class="input-box">
+                            <input type="password" required>
+                            <label>Contraseña</label>
+                        </div>
+                        <button type="submit" class="btn">Iniciar Sesion</button>
+                        <div class="login-register">
+                            <p>¿No tienes una cuenta?</p>
+                            <p><a href="" class="register-link">Registrarse</a></p>
+                        </div>
+                    </form>
                 </div>
+                <div class="form-box register">
+                    <h2>Registrate</h2>
+                    <form action="">
+                        <div class="input-box">
+                            <input type="text" required>
+                            <label>Nombre de usuario</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" required>
+                            <label>Contraseña</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" required>
+                            <label>Correo</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" required>
+                            <label>Celular</label>
+                        </div>
+                        <div class="input-box">
+                            <input class="date" type="date" required>
+                        </div>
+                        <div class="accept-polity">
+                            <input type="checkbox" required>
+                            <label><a
+                                    href="https://drive.google.com/file/d/1BUXoEe1GtgYexlrvzMN9nfQIBJ8cPyzI/view?usp=drive_link"
+                                    target="_blank">Aceptar
+                                    politicas</a></label>
+                        </div>
+                        <button type="submit" class="btn">Registrarse</button>
+                        <div class="login-register">
+                            <p>No tiene una cuenta registrada? </p>
+                            <p><a href="" class="login-link">Inicio Sesion</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <div class="img-logo">
+                <img src="../assets/img/LogoWhite.png" alt="">
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>

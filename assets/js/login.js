@@ -1,3 +1,24 @@
+// codigo de cambio de login a registro
+
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const wrapper = document.querySelector('.wrapper');
+
+registerLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    wrapper.classList.add('active');
+    wrapper.style.height = '650px'; // Cambia el tamaño al activar registerLink
+
+    
+});
+
+loginLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    wrapper.classList.remove('active');
+    wrapper.style.height = '400px'; // Restaura el tamaño al desactivar loginLink
+});
+
+
 //Boton para el formulario de inicio de sesión--------------------------------------------------------
 let btnLogin = document.getElementById("btnLogin");
 let username = document.getElementById("name-input-login");
