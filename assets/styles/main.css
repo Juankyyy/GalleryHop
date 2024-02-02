@@ -312,7 +312,7 @@ a {
 
 .slider img:hover {
     filter: brightness(0.8);
-}
+}   
 
 /* --- --- --- MEDIA Q --- --- --- */
 @media (max-width: 1000px) {
