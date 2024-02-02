@@ -135,7 +135,6 @@ a {
 
 .menu-logo {
     top: 60px;
-    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 10px;
