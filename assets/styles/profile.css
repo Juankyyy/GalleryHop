@@ -401,6 +401,7 @@ main {
 
 .creations-img {
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -522,5 +523,10 @@ main {
 
     .menu-secciones div {
         width: 50%;
+    }
+
+    .creations-img img {
+        width: 200px;
+        height: 100px;
     }
 }

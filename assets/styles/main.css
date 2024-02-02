@@ -316,7 +316,69 @@ a {
 
 .slider img:hover {
     filter: brightness(0.8);
-}   
+}
+
+/* --- --- --- FOOTER --- --- --- */
+
+footer {
+    background-color: #1E2021;
+    padding: 20px 0px;
+}
+
+footer p {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+footer p:hover {
+    text-decoration: 1px underline;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img:nth-child(1) {
+    width: 50px;
+}
+
+.footer-logo img:nth-child(2) {
+    width: 500px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+}
+
+.footer-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-info-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social svg {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer-social svg:hover {
+    background-color: #2A4250;
+}
 
 /* --- --- --- MEDIA Q --- --- --- */
 @media (max-width: 1000px) {
