@@ -26,6 +26,14 @@ a {
 
 main {
     display: flex;
+    align-items: center;
+    height: calc(100dvh - 59px);
+}
+
+.main-content {
+    display: flex;
+    height: 91dvh;
+    gap: 15px;
 }
 
 /* --- --- --- NAVBAR --- --- --- */
@@ -225,7 +233,6 @@ main {
     justify-content: center;
     border-right: 2px solid #a3a3a3;
     width: 300px;
-    height: 90dvh;
 }
 
 .info-content {
@@ -322,16 +329,15 @@ main {
     color: #0038FF;
 }
 
+/* --- --- --- GALLERY --- --- --- */
 .gallery {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .gallery-content {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
 }
 
 .menu-secciones {
@@ -379,6 +385,28 @@ main {
     background-color: #D9D9D9;
 }
 
+/* --- GALLERY --- */
+.creations-img {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.creations-img img {
+    cursor: zoom-in;
+    width: 23dvw;
+    max-width: 200px;
+    /* height: 113px; */
+    border-radius: 6px;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.creations-img img:hover {
+    filter: brightness(0.8);
+}
+
 /* --- --- --- MEDIA Q --- --- --- */
 @media (max-width: 1000px) {
     /* --- MENU --- */
@@ -406,13 +434,11 @@ main {
 
 @media (max-width: 730px) {
     /* --- MENU --- */
-    .navbar-profile-a,
     .navbar-login-a,
     .navbar-submit-a {
         display: none;
     }
 
-    .navbar-profile-menu,
     .navbar-login-menu,
     .navbar-submit-menu {
         display: block;
