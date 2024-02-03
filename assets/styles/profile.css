@@ -469,7 +469,7 @@ main {
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 740px) {
     /* --- MENU --- */
     .navbar-profile-a,
     .navbar-login-a,
@@ -516,6 +516,12 @@ main {
     .menu-secciones div {
         width: 50%;
     }
+
+    /* --- GALLERY --- */
+    .creations-img img {
+        width: 160px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -530,12 +536,5 @@ main {
 
     .navbar-search-input {
         width: 77px;
-    }
-
-    /* --- GALLERY --- */
-
-    .creations-img img {
-        width: 160px;
-        height: 100px;
     }
 }
