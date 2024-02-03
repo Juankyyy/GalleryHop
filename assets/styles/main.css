@@ -138,7 +138,6 @@ a {
 }
 
 .menu-logo {
-    top: 60px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -409,7 +408,6 @@ footer p:hover {
 }
 
 @media (max-width: 730px) {
-
     .navbar-profile-a,
     .navbar-login-a,
     .navbar-submit-a {
@@ -423,6 +421,10 @@ footer p:hover {
         width: 90%;
     }
 
+    .menu-content {
+        width: 60dvw;
+    }
+
     .logo-text img {
         width: 300px;
     }
@@ -433,10 +435,6 @@ footer p:hover {
 
     .slider img {
         height: 100px;
-    }
-
-    .menu-content {
-        width: 60dvw;
     }
 }
 

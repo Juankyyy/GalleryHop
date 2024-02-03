@@ -138,7 +138,6 @@ a {
 }
 
 .menu-logo {
-    top: 60px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -241,7 +240,6 @@ a {
 }
 
 .info-config svg {
-    transition: all 0.3s;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -469,15 +467,21 @@ main {
 
 @media (max-width: 730px) {
     /* --- MENU --- */
+    .navbar-profile-a,
     .navbar-login-a,
     .navbar-submit-a {
         display: none;
     }
 
+    .navbar-profile-menu,
     .navbar-login-menu,
     .navbar-submit-menu {
         display: block;
         width: 90%;
+    }
+
+    .menu-content {
+        width: 60dvw;
     }
 
     /* --- MAIN --- */
@@ -490,6 +494,10 @@ main {
 
     .main-content {
         flex-direction: column;
+    }
+
+    .info-config {
+        right: 20px;
     }
 
     .gallery {
