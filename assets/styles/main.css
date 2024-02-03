@@ -319,17 +319,21 @@ a {
 
 /* --- --- --- FOOTER --- --- --- */
 
-footer {
-    background-color: #1E2021;
+.footer-content {
+    background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(21,21,22),rgb(21,21,22));
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px 0px;
 }
 
-footer p {
+.footer-content a,
+.footer-content p {
     color: #fff;
     transition: all 0.3s;
 }
 
-footer p:hover {
+.footer-content a p:hover {
     text-decoration: 1px underline;
 }
 
@@ -338,14 +342,20 @@ footer p:hover {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 10px;
 }
 
-.footer-logo img:nth-child(1) {
-    width: 50px;
+.footer-logo a:nth-child(1) img {
+    width: 55px;
+    padding: 2px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
-.footer-logo img:nth-child(2) {
+.footer-logo a:nth-child(1):hover img {
+    background-color: #2A4250;
+}
+
+.footer-logo a:nth-child(2) img {
     width: 500px;
 }
 
@@ -358,25 +368,30 @@ footer p:hover {
 
 .footer-info-card {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.footer-info-card-content {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-info-card-social {
+    background-color: #2A4250;
+    padding: 0px 5px;
+    border-radius: 10px;
+}
+
+.footer-social {
+    line-height: 0px;
 }
 
 .footer-social svg {
     padding: 5px;
     border-radius: 5px;
+    transition: all 0.3s;
 }
 
 .footer-social svg:hover {
-    background-color: #2A4250;
+    background-color: #1E2021;
 }
 
 /* --- --- --- MEDIA Q --- --- --- */
