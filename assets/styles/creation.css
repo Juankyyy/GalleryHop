@@ -208,7 +208,7 @@ main {
     font-size: 10px;
 }
 
-.container-categories p:hover {
+.container-categories .selected {
     background-color: #122733;
     border: 3px solid #2A4250;
 }

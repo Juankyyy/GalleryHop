@@ -153,4 +153,14 @@ window.addEventListener("load", Slider);
 
 // Select categories
 
+const categoriesBtn = document.querySelectorAll(".category-item");
+categoriesBtn.forEach(categorie => {
+    categorie.addEventListener("click", () => {
+        categoriesBtn.forEach(categorie2 => {
+            categorie2.classList.remove("selected");
+        })
+        categorie.classList.add("selected");
+    })
+})
+
 // Form logic 
