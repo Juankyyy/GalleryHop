@@ -83,15 +83,115 @@ main {
 }
 
 .container-categories {
+    width: 100%;
+    max-width: 800px;
+    max-height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.container-categories .btn-desplace {
+    width: 25px;
+    height: 25px;
+    background: #000000bb;
+    position: absolute;
+    top: 20%;
+    outline: none;
+    border: none;
+    border-radius: 50%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    grid-template-rows: minmax(5px, auto);
+    place-content: center;
+    cursor: pointer;
+    transform: translateY(-30%);
+    z-index: 5;
+}
+
+.container-categories .btn-desplace:hover {
+    background: #000000cd;
+    width: 30px;
+    height: 30px;
+}
+
+.container-categories .btn-desplace#prev-slide {
+    left: -10px;
+    display: none;
+}
+
+.container-categories .btn-desplace#next-slide {
+    right: -10px;
+}
+
+
+.categorie {
+    display: grid;
+    grid-template-columns: repeat(30, minmax(50px, 1fr));
+    grid-template-rows: minmax(20px, auto);
+    overflow-x: auto;
     gap: 5px;
-    grid-auto-flow: dense;
+    grid-auto-flow: column;
+    align-items: baseline;
+    margin-bottom: 5px;
 }
 
 .wide {
     grid-column: span 2;
+}
+
+.categorie::-webkit-scrollbar {
+    display: none;
+}
+
+.container-categories .categories-scrollbar {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.categories-scrollbar .scrollbar {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.categories-scrollbar:hover .scrollbar {
+    height: 4px;
+}
+
+.scrollbar .scrollbar-bar {
+    width: 33%;
+    height: 100%;
+    background-color: #122733;
+    border-radius: 5px;
+    position: inherit;
+    cursor: grab;
+}
+
+.scrollbar .scrollbar-bar:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.scrollbar .scrollbar-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .container-categories .btn-desplace {
+        display: none !important;
+    }
+
+    .categories-scrollbar .scrollbar-bar {
+        width: 20%;
+    }
 }
 
 .container-categories p {
