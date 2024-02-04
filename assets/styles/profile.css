@@ -24,10 +24,6 @@ a {
     display: none;
 }
 
-main {
-    display: flex;
-}
-
 /* --- --- --- NAVBAR --- --- --- */
 .header {
     display: flex;
@@ -142,7 +138,6 @@ main {
 }
 
 .menu-logo {
-    top: 60px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -224,8 +219,7 @@ main {
     align-items: center;
     justify-content: center;
     border-right: 2px solid #a3a3a3;
-    width: 300px;
-    height: 90dvh;
+    padding: 0px 50px;
 }
 
 .info-content {
@@ -245,13 +239,20 @@ main {
 }
 
 .info-config svg {
-    transition: all 0.3s;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .info-config svg:hover {
     transform: scale(1.1);
+}
+
+.info-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .info-img img {
@@ -290,7 +291,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -322,16 +322,28 @@ main {
     color: #0038FF;
 }
 
+/* --- --- --- GALLERY --- --- --- */
+main {
+    display: flex;
+    align-items: center;
+    height: calc(100dvh - 59px);
+}
+
+.main-content {
+    display: flex;
+    height: 87dvh;
+    gap: 15px;
+}
+
 .gallery {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    overflow-y: auto;
 }
 
 .gallery-content {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
 }
 
 .menu-secciones {
@@ -355,7 +367,7 @@ main {
     filter: brightness(0.9);
 }
 
-.btn-creations {
+.btn-selected {
     background-color: #0038FF;
     color: #fff;
 }
@@ -377,6 +389,39 @@ main {
 
 .sort:hover {
     background-color: #D9D9D9;
+}
+
+/* --- Creations --- */
+.creations {
+    display: flex;
+    justify-content: center;
+}
+
+.creations-content {
+    width: 95%;
+}
+
+.creations-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.creations-img img {
+    cursor: zoom-in;
+    width: 300px;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.creations-img img:hover {
+    filter: brightness(0.8);
 }
 
 /* --- --- --- MEDIA Q --- --- --- */
@@ -402,9 +447,27 @@ main {
         display: block;
         width: 90%;
     }
+
+    /* --- GALLERY --- */
+    .info {
+        padding-bottom: 10px;
+    }
+
+    .info-img img {
+        width: 130px;
+    }
+
+    .card {
+        font-size: 13px;
+    }
+
+    .creations-img img {
+        width: 250px;
+        height: 150px;
+    }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 740px) {
     /* --- MENU --- */
     .navbar-profile-a,
     .navbar-login-a,
@@ -417,6 +480,46 @@ main {
     .navbar-submit-menu {
         display: block;
         width: 90%;
+    }
+
+    .menu-content {
+        width: 60dvw;
+    }
+
+    /* --- MAIN --- */
+    .info {
+        width: 94dvw;
+        border-right: none;
+        padding: 0px 0px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #a3a3a3;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-config {
+        right: 20px;
+    }
+
+    .gallery {
+        overflow-y: unset;
+    }
+
+    .menu-secciones {
+        flex-direction: column;
+    }
+
+    .menu-secciones div {
+        width: 50%;
+    }
+
+    /* --- GALLERY --- */
+    .creations-img img {
+        width: 160px;
+        height: 100px;
     }
 }
 
