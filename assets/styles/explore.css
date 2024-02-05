@@ -132,3 +132,23 @@ hr {
     background-color: #122733;
     border: 3px solid #2A4250;
 }
+
+/* Gallery style */
+
+.gallery-container {
+    position: relative;
+    margin: 0 5% 5% 5%;
+}
+
+.post-creation:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.gallery-container .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: minmax(200px, auto);
+    overflow-x: auto;
+    gap: 15px;
+}
