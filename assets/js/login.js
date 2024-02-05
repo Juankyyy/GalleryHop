@@ -36,6 +36,9 @@ btnLogin.addEventListener("click", function () {
 
         if (usuarioEncontrado) {
             avisoLogIn.innerHTML = "";
+
+            localStorage.setItem('id', element.id);
+
             location.href = "../index.html";
         } else {
             avisoLogIn.innerHTML = "Oh, tus credenciales son incorrectas."
