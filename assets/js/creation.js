@@ -164,3 +164,54 @@ categoriesBtn.forEach(categorie => {
 })
 
 // Form logic 
+let nameArt = document.getElementById("nameArt");
+let descriptionArt = document.getElementById("descriptionArt");
+let priceArt = document.getElementById("priceArt");
+let idUsser = localStorage.getItem('id');
+
+//Algoritmo para seleccionar la categoría
+let categoriesArt = document.querySelectorAll('.category-art');
+
+categoriesArt.forEach(categoryArt => {
+    categoryArt.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        categoryArt.forEach(otherCategoryArt => {
+            otherCategoryArt.classList.remove('selected');
+        });
+
+        this.classList.add('selected');
+    });
+});
+
+//Algoritmo para montar la publicación a la base de datos.
+let btnNewCreation = document.getElementById("btnNewCreation");
+
+btnNewCreation.addEventListener("click", function() {
+    let categorySelected = document.querySelector('.category-art.selected').id;
+    let nameArtValue = nameArt.value;
+    let descriptionArtValue = descriptionArt.value;
+    let priceArtValue = priceArt.value;
+
+    let data = {
+        categorySelected,
+        nameArtValue,
+        descriptionArtValue,
+        priceArtValue
+    }
+    if (idUsser !== null) {
+        fetch(`http://localhost:3000/users/${idUsser}/posts`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        }).then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    };
+});
