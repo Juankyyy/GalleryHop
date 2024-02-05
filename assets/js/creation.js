@@ -12,7 +12,7 @@ chooseImage.addEventListener("click", (e) => {
 });
 
 inputFile.addEventListener("change", (e) => {
-    files = input.files;
+    files = inputFile.files;
     showFiles(files);
 });
 
@@ -55,32 +55,36 @@ function processFile(file) {
         const idImage = `file-${Math.random().toString(32).substring(7)}`;
 
         fileReader.addEventListener("load", e => {
-            // const imagePreiew = document.querySelector(".imagePreiew");
-            // const fileContainer = document.querySelector(".file-container")
-            // const spanText = document.querySelector(".span-text")
+            const containerFile = document.querySelector(".image-preview");
+            const fileContainer = document.querySelector(".file-container");
+            const imgPreview = document.querySelector(".imgPreview");
+            const spanText = document.querySelector(".span-text");
             const fileUrl = fileReader.result;
 
-            // imagePreiew.setAttribute("src", `${fileUrl}`);
-            // imagePreiew.setAttribute("alt", `${file.name}`);
-            // fileContainer.setAttribute("id", `${idImage}`);
-            // spanText.textContent = `${file.name}`;
+            if (containerFile) {
+                if (fileContainer) {
+                    fileContainer.id = `${idImage}`;
+                    imgPreview.src = `${fileUrl}`;
+                    imgPreview.alt = `${file.name}`;
+                    spanText.textContent = `${file.name}`;
+                }
+                else {
+                    let image = `
+                    <di id="${idImage}" class="file-container">
+                        <img class="imgPreview" src="${fileUrl}" alt = "${file.name}">
+                        <div class="status">
+                        </div>
+                    </div>`
 
-            let image = `
-            <di id="${idImage}" class="file-container">
-                <img src="${fileUrl}" alt = "${file.name}" style= "max-width: 100px; max-height: 100px;">
-                <div class="status">
-                <span class="span-text">${file.name}</span>
-                <span class="status-text">Loading....</span>
-                </div>
-            </div>`
+                    const html = document.querySelector(".image-preview").innerHTML;
+                    document.querySelector(".image-preview").innerHTML = image + html;
+                }
 
-            const html = document.querySelector(".image-preiew").innerHTML;
-            document.querySelector(".image-preiew").innerHTML = image + html;
+            }
 
         });
 
         fileReader.readAsDataURL(file);
-        uploadFile(file, idImage);
 
     } else {
         alert("No es un archivo valido")
@@ -126,14 +130,14 @@ const Slider = () => {
     btnSlide.forEach(button => {
         button.addEventListener("click", () => {
             const direction = button.id === "prev-slide" ? -1 : 1;
-            const scroll = categoriesList.clientWidth * direction;
+            const scroll = (categoriesList.clientWidth / 2) * direction;
             categoriesList.scrollBy({ left: scroll, behavior: "smooth" });
         });
     });
 
     const slideButtons = () => {
-        btnSlide[0].style.display = categoriesList.scrollLeft <= 0 ? "none" : "block";
-        btnSlide[1].style.display = categoriesList.scrollLeft >= maxScroll ? "none" : "block";
+        btnSlide[0].style.display = categoriesList.scrollLeft <= 0 ? "none" : "grid";
+        btnSlide[1].style.display = categoriesList.scrollLeft >= maxScroll ? "none" : "grid";
     };
 
     const updateScrollbar = () => {
