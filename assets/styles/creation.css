@@ -46,15 +46,20 @@ main {
     font-size: 16px;
 }
 
-.image-preiew {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    background-color: azure;
-    border: 2px solid rgb(0, 0, 0);
+.image-preview {
     position: absolute;
     top: 120px;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.imgPreview {
+    max-width: 150px;
+    max-height: 150px;
+    position: relative;
 }
 
 .file-container {
