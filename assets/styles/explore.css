@@ -140,15 +140,30 @@ hr {
     margin: 0 5% 5% 5%;
 }
 
-.post-creation:hover {
+.gallery-container .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: minmax(250px, 1fr);
+    gap: 15px;
+    grid-auto-rows: 230px;
+    grid-auto-flow: dense;
+}
+
+.gallery .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery .grid-item:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
 }
 
-.gallery-container .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: minmax(200px, auto);
-    overflow-x: auto;
-    gap: 15px;
+.gallery .grid-item:nth-child(3n - 2) {
+    grid-column: span 2;
+    grid-row: span 2;
 }
