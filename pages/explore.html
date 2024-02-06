@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="stylesheet" href="../assets/styles/explore.css">
-    <script src="../assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="../assets/styles/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
     <script src="../assets/js/explore.js" defer></script>
+    <script src="../assets/js/navbar.js" defer></script>
     <link rel="shortcut icon" href="https://i.postimg.cc/KY4cbJws/Favicon.png" type="image/x-icon">
     <title>Explore | Gallery Hop</title>
 </head>
 
 <body>
-
     <!-- Header  -->
-
     <header class="header">
         <nav class="navbar">
             <div class="navbar-left">
@@ -38,19 +37,8 @@
                     <input class="navbar-search-input" type="text" placeholder="Search">
                 </div>
 
-                <!-- Explore BTN -->
-                <a href="" class="navbar-explore-a">
-                    <div class="navbar-explore navbar-item">
-                        <p>Explore</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
-                            <path fill="#ffffff"
-                                d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m51.58 57.79l-32 64a4.08 4.08 0 0 1-1.79 1.79l-64 32a4 4 0 0 1-5.37-5.37l32-64a4.08 4.08 0 0 1 1.79-1.79l64-32a4 4 0 0 1 5.37 5.37" />
-                        </svg>
-                    </div>
-                </a>
-
                 <!-- Toplist BTN -->
-                <a href="../pages/toplist.html" class="navbar-toplist-a">
+                <a href="./toplist.html" class="navbar-toplist-a">
                     <div class="navbar-toplist navbar-item">
                         <p>Toplist</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -63,7 +51,7 @@
 
             <div class="navbar-right">
                 <!-- Creation BTN -->
-                <a href="../pages/creation.html" class="navbar-submit-a">
+                <a href="./creation.html" class="navbar-submit-a">
                     <div class="navbar-submit navbar-item">
                         <p>Submit</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
@@ -89,7 +77,7 @@
                         <path fill="#ffffff" d="M0 0h48v48H0z" mask="url(#IconifyId18d48472522e626080)" />
                     </svg>
                 </div>
-
+                
                 <!-- Language BTN -->
                 <div class="navbar-language navbar-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
@@ -99,7 +87,7 @@
                 </div>
 
                 <!-- Login BTN -->
-                <a href="../pages/login.html" class="navbar-login-a">
+                <a href="./login.html" class="navbar-login-a">
                     <div class="navbar-login navbar-item">
                         <p>Login</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -111,13 +99,10 @@
                 </a>
 
                 <!-- Profile BTN -->
-                <a href="../pages/profile.html" class="navbar-profile-a">
-                    <div class="navbar-profile navbar-item">
-                        <p>Profile</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
-                            <path fill="#ffffff"
-                                d="M12 19.2c-2.5 0-4.71-1.28-6-3.2c.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1a7.232 7.232 0 0 1-6 3.2M12 5a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-3A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10c0-5.53-4.5-10-10-10" />
-                        </svg>
+                <a href="./profile.html" class="navbar-profile-a">
+                    <div class="navbar-profile">
+                        <p>Juanky</p>
+                        <img src="https://avatars.githubusercontent.com/u/103221572?v=4" alt="Profile Avatar">
                     </div>
                 </a>
 
@@ -129,8 +114,6 @@
                         <span class="menu-bars-3"></span>
                     </div>
 
-                    <!-- Home button -->
-
                     <div class="menu-content menu-content-hide">
                         <!-- Home LINK -->
                         <a href="../index.html" class="menu-logo">
@@ -140,19 +123,8 @@
                             </div>
                         </a>
 
-                        <!-- Explore BTN -->
-                        <a href="" class="navbar-explore-menu">
-                            <div class="navbar-explore navbar-item">
-                                <p>Explore</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
-                                    <path fill="#ffffff"
-                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m51.58 57.79l-32 64a4.08 4.08 0 0 1-1.79 1.79l-64 32a4 4 0 0 1-5.37-5.37l32-64a4.08 4.08 0 0 1 1.79-1.79l64-32a4 4 0 0 1 5.37 5.37" />
-                                </svg>
-                            </div>
-                        </a>
-
                         <!-- Toplist BTN -->
-                        <a href="../pages/toplist.html" class="navbar-toplist-menu">
+                        <a href="./toplist.html" class="navbar-toplist-menu">
                             <div class="navbar-toplist navbar-item">
                                 <p>Toplist</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -163,7 +135,7 @@
                         </a>
 
                         <!-- Creation BTN -->
-                        <a href="../pages/creation.html" class="navbar-submit-menu">
+                        <a href="./creation.html" class="navbar-submit-menu">
                             <div class="navbar-submit navbar-item">
                                 <p>Submit</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
@@ -174,7 +146,7 @@
                         </a>
 
                         <!-- Login BTN -->
-                        <a href="../pages/login.html" class="navbar-login-menu">
+                        <a href="./login.html" class="navbar-login-menu">
                             <div class="navbar-login navbar-item">
                                 <p>Login</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -186,18 +158,15 @@
                         </a>
 
                         <!-- Profile BTN -->
-                        <a href="../pages/profile.html" class="navbar-profile-menu">
-                            <div class="navbar-profile navbar-item">
-                                <p>Profile</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
-                                    <path fill="#ffffff"
-                                        d="M12 19.2c-2.5 0-4.71-1.28-6-3.2c.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1a7.232 7.232 0 0 1-6 3.2M12 5a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-3A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10c0-5.53-4.5-10-10-10" />
-                                </svg>
+                        <a href="./profile.html" class="navbar-profile-menu">
+                            <div class="navbar-profile">
+                                <p>Juanky</p>
+                                <img src="https://avatars.githubusercontent.com/u/103221572?v=4" alt="Profile Avatar">
                             </div>
                         </a>
 
-                        <!-- Theme BTN -->
                         <div class="menu-icons">
+                            <!-- Theme BTN -->
                             <div class="navbar-dark-menu navbar-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48">
                                     <defs>
@@ -281,27 +250,27 @@
 
     <section class="gallery-container">
         <div class="gallery">
-            <div class="grid-item" style="background-image: url('/assets/img/creations/3dart1.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/3dart2.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/3dart3.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/3dart4.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/3dart5.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/3dart6.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acrilico1.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acrilico2.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acrilico3.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acrilico4.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acrilico5.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acrilico6.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acuarela1.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acuarela2.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acuarela3.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acuarela4.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acuarela5.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/Acuarela6.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/arcilla1.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/arcilla2.jpg');"></div>
-            <div class="grid-item" style="background-image: url('/assets/img/creations/arcilla3.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/3dart1.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/3dart2.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/3dart3.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/3dart4.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/3dart5.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/3dart6.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acrilico1.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acrilico2.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acrilico3.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acrilico4.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acrilico5.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acrilico6.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acuarela1.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acuarela2.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acuarela3.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acuarela4.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acuarela5.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/Acuarela6.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/arcilla1.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/arcilla2.jpg');"></div>
+            <div class="grid-item" style="background-image: url('../assets/img/creations/arcilla3.jpg');"></div>
         </div>
     </section>
 
