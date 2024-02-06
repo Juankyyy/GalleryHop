@@ -67,14 +67,22 @@ a {
     border: 3px solid #122733;
     border-radius: 5px;
     padding: 5px 10px;
-    gap: 5px;
+    gap: 10px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar-item svg{
     transition: all 0.3s;
 }
 
 .navbar-item:hover {
     background-color: #122733;
     border: 3px solid #2A4250;
+}
+
+.navbar-item:hover svg {
+    transform: scale(1.4) rotate(20deg);
 }
 
 .navbar-search {
@@ -113,7 +121,7 @@ a {
 }
 
 .navbar-profile-menu {
-    width: min-content;
+    justify-content: center;
 }
 
 .navbar-profile img {
@@ -124,15 +132,11 @@ a {
 }
 
 .navbar-profile:hover img {
-    transform: scale(1.3);
+    transform: scale(1.3) rotate(10deg);
 }
 
-.navbar-profile p {
-    transition: all 0.3s;
-}
-
-.navbar-profile:hover p {
-    font-weight: bold;
+.navbar-profile-menu:hover img {
+    transform: scale(1.3) rotate(10deg);
 }
 
 .navbar-right {
@@ -475,7 +479,11 @@ a {
         display: none;
     }
 
-    .navbar-profile-menu,
+    .navbar-profile-menu {
+        display: flex;
+        width: 90%;
+    }
+
     .navbar-login-menu,
     .navbar-submit-menu {
         display: block;
