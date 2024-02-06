@@ -95,6 +95,14 @@ a {
     border-radius: 50px;
 }
 
+.navbar-search svg {
+    transition: all 0.3s;
+}
+
+.navbar-search:hover svg {
+    transform: scale(1.2) rotate(13deg);
+}
+
 .navbar-search-input {
     background-color: #122733;
     color: #fff;
