@@ -4,13 +4,17 @@
     padding: 0;
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    color: white;
-    background-color: #141C29;
-    padding: 0px;
+    color: #fff;
+    background-color: #FFF9F6;
+}
 
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 .container_2 {
@@ -18,6 +22,7 @@ body {
 }
 
 .wrapper {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     background-image: url(../img/fondo.png);
@@ -39,8 +44,7 @@ body {
 }
 
 .logo {
-    height: 10vh;
-    width: 40vw;
+    width: 500px;
 }
 
 .hidden {
@@ -49,16 +53,16 @@ body {
 }
 
 .content {
-
     display: flex;
     flex-direction: column;
-    width: 45vw;
-    padding: 2%;
+    align-items: center;
+    text-wrap: pretty;
+    padding: 10px;
     margin: 20px auto;
+    width: 50dvw;
     background-color: #2D4263;
     opacity: 0.9;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-
 }
 
 .join {
@@ -95,23 +99,25 @@ button {
 }
 
 .img-logo img {
-
     height: 95vh;
     left: 0%;
     margin: 30px;
 }
 
 .join {
-
     flex-direction: column;
     padding: 20px;
+    margin-bottom: 20px;
     background-color: #3A5261;
     opacity: 0.9;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-button {
+.join-us p {
+    text-wrap: pretty;
+}
 
+button {
     width: 150px;
     height: 40px;
     background: #141C29;
@@ -123,24 +129,20 @@ button {
     color: white;
 }
 
-.content {
-    display: flex;
-    align-items: center;
+.mission-item p {
+    text-wrap: pretty;
+}
+
+.mission-item h3,
+.how-it-works-item h3 {
+    text-align: center;
 }
 
 .developers-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    margin: 50px;
-
-
-}
-
-.developers-gallery h1 {
-    font-size: 3vw;
-
+    text-align: center;
 }
 
 .wrapper_2 {
@@ -179,9 +181,6 @@ button {
 
 p {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
 }
 
 .gallery {
@@ -191,7 +190,6 @@ p {
 .developers-container {
     margin-top: 200px;
     display: flex;
-    background-color: #141C29;
     width: 95%;
     justify-content: space-around;
     margin: 20px;
@@ -242,15 +240,15 @@ p {
 
 .frase {
     display: flex;
+    /* display: none; */
     justify-content: center;
     align-items: center;
     margin: 20px;
 }
 
-.frase h3 {
+.frase p {
     font-family: "Dancing Script", cursive;
     text-align: center;
-    font-size: 3vh;
     border-bottom: 2px solid;
 }
 
@@ -264,7 +262,6 @@ p {
     height: 165px;
     width: 165px;
     border-radius: 50%;
-    background-color: #AE9091;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,41 +279,37 @@ p {
     width: 40px;
 }
 
-@media screen and (max-width:1440px) {
-    .logo img {
-        height: 10vh;
-        width: 20vw;
-    }
-
+@media (max-width:1440px) {
     .img-logo img {
         height: 60vh;
         margin: 30px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media (max-width:1024px) {
     .img-logo img {
         height: 65vh;
     }
 
     .logo {
-        height: 6vh;
-        width: 45vh;
+        width: 400px;
     }
 
     .developers-container {
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 900px) {
     body {
         display: flex;
-        align-items: center;
         flex-direction: column;
         overflow-x: hidden;
+    }
+
+    .content {
+        width: unset;
+        padding: 5px;
     }
 
     .intro-container {
@@ -335,12 +328,10 @@ p {
     .container_2 {
         flex-direction: column;
         align-items: center;
-
     }
 
     .logo {
-        height: 4vh;
-        width: 70vw;
+        width: 300px;
     }
 
     .img-logo img {
@@ -348,9 +339,4 @@ p {
         left: 0%;
         margin: 30px;
     }
-
-    .developers-gallery h1 {
-        font-size: 6vw;
-    }
-
 }
