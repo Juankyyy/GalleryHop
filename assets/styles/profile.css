@@ -24,194 +24,6 @@ a {
     display: none;
 }
 
-/* --- --- --- NAVBAR --- --- --- */
-.header {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #122733;
-    color: #fff;
-    margin-top: 5px;
-    padding: 8px 10px;
-    border-radius: 10px;
-    height: 54px;
-    width: 95dvw;
-    overflow-x: hidden;
-}
-
-.navbar a {
-    color: #fff;
-}
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.navbar-logo {
-    margin-right: 10px;
-    line-height: 0px;
-}
-
-.navbar-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2A4250;
-    border: 3px solid #122733;
-    border-radius: 5px;
-    padding: 5px 10px;
-    gap: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.navbar-item:hover {
-    background-color: #122733;
-    border: 3px solid #2A4250;
-}
-
-.navbar-search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 5px 10px;
-    border: 2px solid #3A5261;
-    border-radius: 50px;
-}
-
-.navbar-search-input {
-    background-color: #122733;
-    color: #fff;
-    border: none;
-    width: 150px;
-}
-
-.navbar-search-input:focus {
-    outline: none;
-}
-
-.navbar-search-input::placeholder {
-    color: #fff;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.navbar-icon {
-    cursor: pointer;
-    line-height: 0px;
-    padding: 3px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.navbar-icon:hover {
-    background-color: #2A4250;
-}
-
-/* --- MENU --- */
-.menu-content {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: #122733;
-    height: 100dvh;
-    width: 30dvw;
-    top: 0px;
-    right: 0px;
-    transition: all 0.5s;
-    z-index: 1;
-}
-
-.menu-logo {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu-logo img {
-    width: 160px;
-}
-
-.menu-shadow {
-    box-shadow: 0px 0px 0px 100vmax #00000063;
-}
-
-.menu-bars-hide {
-    display: none;
-}
-
-.menu-content-hide {
-    right: -100% !important;
-}
-
-.menu-bars {
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.menu-bars span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 5px;
-    transform-origin: 0px 100%;
-    transition: all 0.3s;
-}
-
-.menu-fixed {
-    position: fixed;
-    top: 17px;
-    right: 16px;
-}
-
-.activemenu-bars-1 {
-    transform: rotate(45deg) translate(-2px, 1px);
-}
-
-.activemenu-bars-2 {
-    opacity: 0;
-    margin-left: -35px;
-}
-
-.activemenu-bars-3 {
-    transform: rotate(-45deg) translate(-4px, 2px);
-}
-
-.navbar-explore-menu,
-.navbar-toplist-menu,
-.navbar-submit-menu,
-.navbar-login-menu,
-.navbar-profile-menu,
-.menu-icons {
-    display: none;
-}
-
-.menu-icons {
-    gap: 10px;
-}
-
 /* --- --- --- INFO --- --- --- */
 .info {
     position: relative;
@@ -391,7 +203,7 @@ main {
     background-color: #D9D9D9;
 }
 
-/* --- Creations --- */
+/* --- CREATIONS --- */
 .creations {
     display: flex;
     justify-content: center;
@@ -426,28 +238,6 @@ main {
 
 /* --- --- --- MEDIA Q --- --- --- */
 @media (max-width: 1000px) {
-    /* --- MENU --- */
-    .menu-bars {
-        display: flex;
-    }
-
-    .navbar-explore-a,
-    .navbar-toplist-a,
-    .navbar-dark,
-    .navbar-language {
-        display: none;
-    }
-
-    .menu-icons {
-        display: flex;
-    }
-
-    .navbar-explore-menu,
-    .navbar-toplist-menu {
-        display: block;
-        width: 90%;
-    }
-
     /* --- GALLERY --- */
     .info {
         padding-bottom: 10px;
@@ -468,24 +258,6 @@ main {
 }
 
 @media (max-width: 740px) {
-    /* --- MENU --- */
-    .navbar-profile-a,
-    .navbar-login-a,
-    .navbar-submit-a {
-        display: none;
-    }
-
-    .navbar-profile-menu,
-    .navbar-login-menu,
-    .navbar-submit-menu {
-        display: block;
-        width: 90%;
-    }
-
-    .menu-content {
-        width: 60dvw;
-    }
-
     /* --- MAIN --- */
     .info {
         width: 94dvw;
@@ -523,17 +295,6 @@ main {
     }
 }
 
-@media (max-width: 400px) {
-    /* --- MENU --- */
-    .navbar-logo {
-        margin-right: 0px;
-    }
+/* @media (max-width: 400px) {
 
-    .navbar-left {
-        gap: 15px;
-    }
-
-    .navbar-search-input {
-        width: 77px;
-    }
-}
+} */
