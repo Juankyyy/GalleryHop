@@ -8,8 +8,6 @@ registerLink.addEventListener('click', function (event) {
     event.preventDefault();
     wrapper.classList.add('active');
     wrapper.style.height = '650px'; // Cambia el tamaño al activar registerLink
-
-    
 });
 
 loginLink.addEventListener('click', function (event) {
@@ -19,7 +17,7 @@ loginLink.addEventListener('click', function (event) {
 });
 
 
-//Boton para el formulario de inicio de sesión--------------------------------------------------------
+// --- --- --- LOGIN --- --- ---
 let btnLogin = document.getElementById("btnLogin");
 let username = document.getElementById("name-input-login");
 let password = document.getElementById("password-input-login");
@@ -39,16 +37,37 @@ btnLogin.addEventListener("click", function () {
 
             localStorage.setItem('id', user.id);
 
+            // --- --- --- TOASTIFY --- --- ---
+            Toastify({
+                text: "Se ha iniciado sesión correctamente",
+                className: "toastifyGood",
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                },
+                newWindow: true,
+                gravity: "bottom",
+                position: "center",
+            }).showToast();
+
             location.href = "../index.html";
         } else {
-            avisoLogIn.innerHTML = "Oh, tus credenciales son incorrectas."
+            // --- --- --- TOASTIFY --- --- ---
+            Toastify({
+                text: "Tus credenciales son incorrectas :(",
+                className: "toastifyBad",
+                style: {
+                    background: "linear-gradient(90deg, rgba(255,66,66,1) 0%, rgba(219,0,0,1) 100%)",
+                },
+                gravity: "bottom",
+                position: "center",
+            }).showToast();
         }
     });
 });
 
 
 
-//Boton para el formulario de registro----------------------------------------------------------------
+// --- --- --- REGISTER --- --- ---
 let btnRegistro = document.getElementById("btnRegistro");
 
 btnRegistro.addEventListener("click", function() {
@@ -91,7 +110,20 @@ btnRegistro.addEventListener("click", function() {
                     }).then(response => response.json())
                     .then(data => {
                         console.log('Usuario registrado como:', data);
+
+                        // --- --- --- TOASTIFY --- --- ---
+                        Toastify({
+                            text: "Se ha registrado correctamente :)",
+                            className: "toastifyGood",
+                            style: {
+                                background: "linear-gradient(to right, #00b09b, #96c93d)",
+                            },
+                            gravity: "bottom",
+                            position: "center",
+                        }).showToast();
+
                         avisoSignUp.innerHTML = "";
+                        
                         location.href = "../index.html";
                         
                         nombreRegistro = '';
@@ -104,6 +136,15 @@ btnRegistro.addEventListener("click", function() {
             }
         });
     } else {
-        avisoSignUp.innerHTML = "Tienes que aceptar los términos y condiciones.";
+        // --- --- --- TOASTIFY --- --- ---
+        Toastify({
+            text: "Tienes que aceptar los términos y condiciones :D",
+            className: "toastifyBad",
+            style: {
+                background: "linear-gradient(90deg, rgba(255,66,66,1) 0%, rgba(219,0,0,1) 100%)",
+            },
+            gravity: "bottom",
+            position: "center",
+        }).showToast();
     }
 });
