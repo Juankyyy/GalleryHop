@@ -74,6 +74,10 @@ a {
     display: flex;
 }
 
+.join-us {
+    color: #fff;
+}
+
 h2 {
     text-align: center;
     margin-top: 10px;
