@@ -37,8 +37,19 @@
                     <input class="navbar-search-input" type="text" placeholder="Search">
                 </div>
 
+                <!-- Explore BTN -->
+                <a href="../pages/explore.html" class="navbar-explore-a">
+                    <div class="navbar-explore navbar-item">
+                        <p>Explore</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
+                            <path fill="#ffffff"
+                                d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m51.58 57.79l-32 64a4.08 4.08 0 0 1-1.79 1.79l-64 32a4 4 0 0 1-5.37-5.37l32-64a4.08 4.08 0 0 1 1.79-1.79l64-32a4 4 0 0 1 5.37 5.37" />
+                        </svg>
+                    </div>
+                </a>
+
                 <!-- Toplist BTN -->
-                <a href="./toplist.html" class="navbar-toplist-a">
+                <a href="../pages/toplist.html" class="navbar-toplist-a">
                     <div class="navbar-toplist navbar-item">
                         <p>Toplist</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -51,7 +62,7 @@
 
             <div class="navbar-right">
                 <!-- Creation BTN -->
-                <a href="./creation.html" class="navbar-submit-a">
+                <a href="../pages/creation.html" class="navbar-submit-a">
                     <div class="navbar-submit navbar-item">
                         <p>Submit</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
@@ -77,7 +88,7 @@
                         <path fill="#ffffff" d="M0 0h48v48H0z" mask="url(#IconifyId18d48472522e626080)" />
                     </svg>
                 </div>
-                
+
                 <!-- Language BTN -->
                 <div class="navbar-language navbar-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
@@ -87,7 +98,7 @@
                 </div>
 
                 <!-- Login BTN -->
-                <a href="./login.html" class="navbar-login-a">
+                <a href="../pages/login.html" class="navbar-login-a">
                     <div class="navbar-login navbar-item">
                         <p>Login</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -99,10 +110,10 @@
                 </a>
 
                 <!-- Profile BTN -->
-                <a href="./profile.html" class="navbar-profile-a">
+                <a href="../pages/profile.html" class="navbar-profile-a">
                     <div class="navbar-profile">
-                        <p>Juanky</p>
-                        <img src="https://avatars.githubusercontent.com/u/103221572?v=4" alt="Profile Avatar">
+                        <p id="nameUser"></p>
+                        <img id="imgUser" src="" alt="Profile Avatar">
                     </div>
                 </a>
 
@@ -118,13 +129,24 @@
                         <!-- Home LINK -->
                         <a href="../index.html" class="menu-logo">
                             <div class="menu-logo">
-                                <img src="../assets/img/LogoWhite.png" alt="Logo Gallery Hop">
-                                <img src="../assets/img/GHTextWhite.png" alt="Texto Gallery Hop">
+                                <img src="./assets/img/LogoWhite.png" alt="Logo Gallery Hop">
+                                <img src="./assets/img/GHTextWhite.png" alt="Texto Gallery Hop">
+                            </div>
+                        </a>
+
+                        <!-- Explore BTN -->
+                        <a href="../pages/explore.html" class="navbar-explore-menu">
+                            <div class="navbar-explore navbar-item">
+                                <p>Explore</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
+                                    <path fill="#ffffff"
+                                        d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m51.58 57.79l-32 64a4.08 4.08 0 0 1-1.79 1.79l-64 32a4 4 0 0 1-5.37-5.37l32-64a4.08 4.08 0 0 1 1.79-1.79l64-32a4 4 0 0 1 5.37 5.37" />
+                                </svg>
                             </div>
                         </a>
 
                         <!-- Toplist BTN -->
-                        <a href="./toplist.html" class="navbar-toplist-menu">
+                        <a href="../pages/toplist.html" class="navbar-toplist-menu">
                             <div class="navbar-toplist navbar-item">
                                 <p>Toplist</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -135,7 +157,7 @@
                         </a>
 
                         <!-- Creation BTN -->
-                        <a href="./creation.html" class="navbar-submit-menu">
+                        <a href="../pages/creation.html" class="navbar-submit-menu">
                             <div class="navbar-submit navbar-item">
                                 <p>Submit</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256">
@@ -146,7 +168,7 @@
                         </a>
 
                         <!-- Login BTN -->
-                        <a href="./login.html" class="navbar-login-menu">
+                        <a href="../pages/login.html" class="navbar-login-menu">
                             <div class="navbar-login navbar-item">
                                 <p>Login</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24">
@@ -158,10 +180,10 @@
                         </a>
 
                         <!-- Profile BTN -->
-                        <a href="./profile.html" class="navbar-profile-menu">
+                        <a href="../pages/profile.html" class="navbar-profile-menu">
                             <div class="navbar-profile">
-                                <p>Juanky</p>
-                                <img src="https://avatars.githubusercontent.com/u/103221572?v=4" alt="Profile Avatar">
+                                <p id="nameUserMenu"></p>
+                                <img id="imgUserMenu" src="" alt="Profile Avatar">
                             </div>
                         </a>
 
@@ -226,7 +248,7 @@
 
     <section class="gallery-container">
         <div id="gallery" class="gallery">
-            
+
         </div>
     </section>
 
