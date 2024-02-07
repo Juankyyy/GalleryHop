@@ -655,8 +655,654 @@
             "votes": "234"
           }
         ]
-      }
-    ],
+      },
+      {
+  "id": "c80n5",
+  "username": "Juan pablo",
+  "password": "juanpa10",
+  "email": "pablitodev11@gmail.com",
+  "phone": "3507186514",
+  "birthday": "15-05-2002",
+  "money": 0,
+  "posts": [
+    {
+      "id": "ghi3",
+      "image": "../assets/img/creations/Ink3.jpg",
+      "name": "Ink3 ",
+      "post_date": "02-05-2023",
+      "description": "Captura la energía del amanecer con esta pintura vibrante.",
+      "price": 85.20,
+      "art_type": "Ink",
+      "votes": 7890
+    },
+    {
+      "id": "jkl4",
+      "image": "../assets/img/creations/Lapicesdecolores3.jpg",
+      "name": "Lapicesdecolores3",
+      "post_date": "18-08-2023",
+      "description": "Explora mundos surrealistas a través de esta obra de arte única.",
+      "price": 110.75,
+      "art_type": "Lapicesdecolores",
+      "votes": 4567
+    },
+    {
+      "id": "mno5",
+      "image": "../assets/img/creations/madera3.jpg",
+      "name": "madera3",
+      "post_date": "07-12-2023",
+      "description": "Una fusión de formas y colores en una expresión abstracta.",
+      "price": 95.50,
+      "art_type": "madera",
+      "votes": 2310
+    },
+    {
+      "id": "pqr6",
+      "image": "../assets/img/creations/mix3.jpg",
+      "name": "mix3",
+      "post_date": "25-02-2024",
+      "description": "Explora realidades alternativas a través de esta pintura intrigante.",
+      "price": 120.30,
+      "art_type": "mix",
+      "votes": 876
+    },
+    {
+      "id": "stu7",
+      "image": "../assets/img/creations/Oleo3/.jpg",
+      "name": "Oleo3",
+      "post_date": "14-05-2024",
+      "description": "Una visión surrealista que desafía la percepción convencional.",
+      "price": 99.90,
+      "art_type": "Oleo",
+      "votes": 543
+    },
+    {
+      "id": "vwx8",
+      "image": "../assets/img/creations/Pastel3/.jpg",
+      "name": "Pastel3",
+      "post_date": "30-09-2024",
+      "description": "Expresiones artísticas que reflejan la vida urbana contemporánea.",
+      "price": 88.75,
+      "art_type": "Pastel",
+      "votes": 210
+    },
+    {
+      "id": "yza9",
+      "image": "../assets/img/creations/piedra3/.jpg",
+      "name": "piedra3",
+      "post_date": "19-01-2025",
+      "description": "La abstracción cobra vida con un juego dinámico de formas y líneas.",
+      "price": 105.40,
+      "art_type": "piedra",
+      "votes": 432
+    },
+    {
+      "id": "bcd1",
+      "image": "../assets/img/creations/Temple3/.jpg",
+      "name": "Temple3",
+      "post_date": "05-04-2025",
+      "description": "Captura la esencia emocional a través de este retrato artístico.",
+      "price": 115.60,
+      "art_type": "Temple",
+      "votes": 1098
+    },
+    {
+      "id": "efg2",
+      "image": "../assets/img/creations/3dart6/.jpg",
+      "name": "3dart6",
+      "post_date": "23-07-2025",
+      "description": "La simplicidad habla volumenes en este expresivo cuadro abstracto.",
+      "price": 80.20,
+      "art_type": "3dart",
+      "votes": 765
+    },
+    {
+      "id": "hij3",
+      "image": "../assets/img/creations/Acrilico6/.jpg",
+      "name": "Acrilico6",
+      "post_date": "11-10-2025",
+      "description": "Explora paisajes oníricos en esta obra que despierta la imaginación.",
+      "price": 130.90,
+      "art_type": "Acrilico",
+      "votes": 2345
+    },
+    {
+      "id": "klm4",
+      "image": "../assets/img/creations/Acuarela6/.jpg",
+      "name": "Acuarela6",
+      "post_date": "29-12-2025",
+      "description": "Experimenta con vibraciones geométricas en esta obra abstracta.",
+      "price": 95.75,
+      "art_type": "Acuarela",
+      "votes": 9876
+    }
+  ]
+},{
+      "id": "012pl",
+      "username": "Ronald",
+      "password": "ronaldRiwi",
+      "email": "ronalopalacio@riwi.io",
+      "phone": "3145674312",
+      "birthday": "09-07-1985",
+      "money": 0,
+      "posts": [
+        {
+          "id": "mno5",
+          "image": "../assets/img/creations/Ink4/.jpg",
+          "name": "Ink4",
+          "post_date": "16-02-2023",
+          "description": "Una obra que captura la esencia del movimiento en el arte.",
+          "price": 120.80,
+          "art_type": "Ink",
+          "votes": 5432
+        },
+        {
+          "id": "pqr6",
+          "image": "../assets/img/creations/Lapicesdecolores4/.jpg",
+          "name": "Lapicesdecolores4",
+          "post_date": "08-05-2023",
+          "description": "Explora la arquitectura desde perspectivas únicas en esta pintura.",
+          "price": 95.50,
+          "art_type": "Lapicesdecolores",
+          "votes": 2109
+        },
+        {
+          "id": "stu7",
+          "image": "../assets/img/creations/madera4/.jpg",
+          "name": "madera4",
+          "post_date": "22-08-2023",
+          "description": "Reflejos artísticos que capturan la belleza de la naturaleza.",
+          "price": 135.90,
+          "art_type": "madera",
+          "votes": 8765
+        },
+        {
+          "id": "vwx8",
+          "image": "../assets/img/creations/mix4/.jpg",
+          "name": "mix4",
+          "post_date": "04-12-2023",
+          "description": "Explora una variedad de emociones a través de retratos expresivos.",
+          "price": 140.60,
+          "art_type": "mix",
+          "votes": 3210
+        },
+        {
+          "id": "yza9",
+          "image": "../assets/img/creations/Oleo4/.jpg",
+          "name": "Oleo4",
+          "post_date": "19-03-2024",
+          "description": "La combinación de colores da vida a esta expresión abstracta.",
+          "price": 105.30,
+          "art_type": "Oleo",
+          "votes": 4321
+        },
+        {
+          "id": "bcd1",
+          "image": "../assets/img/creations/Pastel4/.jpg",
+          "name": "Pastel4",
+          "post_date": "27-06-2024",
+          "description": "Vislumbra el futuro a través de esta visión artística futurista.",
+          "price": 150.20,
+          "art_type": "Pastel",
+          "votes": 9876
+        },
+        {
+          "id": "efg2",
+          "image": "../assets/img/creations/piedra4/.jpg",
+          "name": "piedra4",
+          "post_date": "14-09-2024",
+          "description": "Captura la esencia de la ciudad a través de rostros urbanos.",
+          "price": 110.75,
+          "art_type": "piedra",
+          "votes": 765
+        },
+        {
+          "id": "hij3",
+          "image": "../assets/img/creations/Temple4/.jpg",
+          "name": "Temple4",
+          "post_date": "02-01-2025",
+          "description": "Explora expresiones abstractas en esta obra que desafía la mente.",
+          "price": 130.40,
+          "art_type": "Temple",
+          "votes": 1098
+        },
+        {
+          "id": "klm4",
+          "image": "../assets/img/creations/arcilla6/.jpg",
+          "name": "arcilla6",
+          "post_date": "21-04-2025",
+          "description": "Misteriosas visiones artísticas que se revelan en la oscuridad.",
+          "price": 88.20,
+          "art_type": "arcilla",
+          "votes": 2345
+        },
+        {
+          "id": "nop5",
+          "image": "../assets/img/creations/bronce4/.jpg",
+          "name": "bronce4",
+          "post_date": "08-08-2025",
+          "description": "Explora la geometría en esta abstracción artística única.",
+          "price": 115.60,
+          "art_type": "bronce",
+          "votes": 876
+        },
+        {
+          "id": "qrs6",
+          "image": "../assets/img/creations/Carboncillo4/.jpg",
+          "name": "Carboncillo4",
+          "post_date": "26-11-2025",
+          "description": "Una visión única representada a través de perspectivas artísticas.",
+          "price": 99.90,
+          "art_type": "Carboncillo",
+          "votes": 543
+        },
+        {
+          "id": "tuv7",
+          "image": "../assets/img/creations/digital4/.jpg",
+          "name": "digital4",
+          "post_date": "14-02-2026",
+          "description": "Captura fragmentos del tiempo en esta obra maestra única.",
+          "price": 105.60,
+          "art_type": "digital",
+          "votes": 210
+        }
+      ]
+    },
+    {
+      "id": "2rrb2",
+      "username": "Alejandro",
+      "password": "alejito29",
+      "email": "alejandropuertamora@gmail.com",
+      "phone": "3153186512",
+      "birthday": "25-01-1995",
+      "money": 0,
+      "posts": [
+        {
+          "id": "efg2",
+          "image": "../assets/img/creations/edicion4/.jpg",
+          "name": "edicion4",
+          "post_date": "02-03-2023",
+          "description": "Una explosión de colores se fusiona en esta vibrante obra de arte.",
+          "price": 95.50,
+          "art_type": "edicion",
+          "votes": 8765
+        },
+        {
+          "id": "hij3",
+          "image": "../assets/img/creations/fotografia4/.jpg",
+          "name": "fotografia4",
+          "post_date": "20-06-2023",
+          "description": "Descubre los misterios ocultos de la naturaleza en esta pintura.",
+          "price": 135.90,
+          "art_type": "fotografia",
+          "votes": 3210
+        },
+        {
+          "id": "klm4",
+          "image": "../assets/img/creations/Gouache4/.jpg",
+          "name": "Gouache4",
+          "post_date": "07-09-2023",
+          "description": "Captura los reflejos del alma a través de esta obra conmovedora.",
+          "price": 140.60,
+          "art_type": "Gouache",
+          "votes": 5432
+        },
+        {
+          "id": "nop5",
+          "image": "../assets/img/creations/graffiti4/.jpg",
+          "name": "graffiti4",
+          "post_date": "26-12-2023",
+          "description": "Explora un universo abstracto a través de esta fascinante pintura.",
+          "price": 120.30,
+          "art_type": "graffiti",
+          "votes": 2109
+        },
+        {
+          "id": "qrs6",
+          "image": "../assets/img/creations/Grafito4/.jpg",
+          "name": "Grafito4",
+          "post_date": "13-03-2024",
+          "description": "Explora rostros que surgen de la rica imaginación del artista.",
+          "price": 110.75,
+          "art_type": "Grafito",
+          "votes": 1098
+        },
+        {
+          "id": "wxy8",
+          "image": "../assets/img/creations/Lapicesdecolores5/.jpg",
+          "name": "Lapicesdecolores5",
+          "post_date": "19-09-2024",
+          "description": "La abstracción cobra vida con movimientos cinéticos en esta pintura.",
+          "price": 105.40,
+          "art_type": "Lapicesdecolores",
+          "votes": 4321
+        },
+        {
+          "id": "zab9",
+          "image": "../assets/img/creations/madera5/.jpg",
+          "name": "madera5",
+          "post_date": "07-01-2025",
+          "description": "Explora visiones surrealistas en esta obra que desafía la realidad.",
+          "price": 130.90,
+          "art_type": "madera",
+          "votes": 9876
+        },
+        {
+          "id": "bcd1",
+          "image": "../assets/img/creations/mix5/.jpg",
+          "name": "mix5",
+          "post_date": "26-04-2025",
+          "description": "Expresiones artísticas que reflejan la vida urbana contemporánea.",
+          "price": 88.75,
+          "art_type": "mix",
+          "votes": 765
+        },
+        {
+          "id": "efg2",
+          "image": "../assets/img/creations/Oleo5/.jpg",
+          "name": "Oleo5",
+          "post_date": "14-08-2025",
+          "description": "Embárcate en una aventura abstracta a través de esta pintura única.",
+          "price": 95.75,
+          "art_type": "Oleo",
+          "votes": 2345
+        },
+        {
+          "id": "hij3",
+          "image": "../assets/img/creations/Pastel5/.jpg",
+          "name": "Pastel5",
+          "post_date": "02-12-2025",
+          "description": "Captura la esencia emocional en esta obra maestra llena de sentimiento.",
+          "price": 115.60,
+          "art_type": "Pastel",
+          "votes": 543
+        },
+        {
+          "id": "klm4",
+          "image": "../assets/img/creations/piedra5/.jpg",
+          "name": "piedra5",
+          "post_date": "21-03-2026",
+          "description": "Captura fragmentos del tiempo en esta obra maestra única.",
+          "price": 105.60,
+          "art_type": "piedra",
+          "votes": 210
+        },  
+        {
+          "id": "I5k5",
+          "image": "../assets/img/creations/Temple5/.jpg",
+          "name": "Temple5",
+          "post_date": "01-06-2024",
+          "description": "Observa paisajes que evolucionan en esta obra maestra única.",
+          "price": 150.20,
+          "art_type": "Temple",
+          "votes": 876
+        }
+      ]
+    },
+    {
+      "id": "30c8",
+      "username": "Robinson",
+      "password": "robonsonriwi",
+      "email": "robinsonandres@riwi.io",
+      "phone": "3205145422",
+      "birthday": "20-12-1990",
+      "money": 0,
+      "posts": [
+        {
+          "id": "vwx8",
+          "image": "../assets/img/creations/bronce5/.jpg",
+          "name": "bronce5",
+          "post_date": "12-04-2023",
+          "description": "Captura la esencia de las luces urbanas en esta obra artística.",
+          "price": 110.75,
+          "art_type": "bronce",
+          "votes": 1098
+        },
+        {
+          "id": "yza9",
+          "image": "../assets/img/creations/Carboncillo5/.jpg",
+          "name": "Carboncillo5",
+          "post_date": "30-07-2023",
+          "description": "Explora el arte abstracto contemporáneo en esta pintura única.",
+          "price": 130.40,
+          "art_type": "Carboncillo",
+          "votes": 765
+        },
+        {
+          "id": "bcd1",
+          "image": "../assets/img/creations/digital5/.jpg",
+          "name": "digital5",
+          "post_date": "17-11-2023",
+          "description": "Visiones artísticas que toman forma a través de elementos esculturales.",
+          "price": 99.90,
+          "art_type": "digital",
+          "votes": 2345
+        },
+        {
+          "id": "efg2",
+          "image": "../assets/img/creations/edicion5/.jpg",
+          "name": "edicion5",
+          "post_date": "04-03-2024",
+          "description": "Reflejos artísticos que capturan la esencia de la vida urbana.",
+          "price": 105.60,
+          "art_type": "edicion",
+          "votes": 876
+        },
+        {
+          "id": "hij3",
+          "image": "../assets/img/creations/fotografia5/.jpg",
+          "name": "fotografia5",
+          "post_date": "22-06-2024",
+          "description": "Una sinfonía visual que celebra la diversidad de colores.",
+          "price": 95.75,
+          "art_type": "fotografia",
+          "votes": 4321
+        },
+        {
+          "id": "klm4",
+          "image": "../assets/img/creations/Gouache5/.jpg",
+          "name": "Gouache5",
+          "post_date": "09-10-2024",
+          "description": "Paisajes que cobran vida a través de la representación del movimiento.",
+          "price": 120.30,
+          "art_type": "Gouache",
+          "votes": 2109
+        },
+        {
+          "id": "nop5",
+          "image": "../assets/img/creations/graffiti5/.jpg",
+          "name": "graffiti5",
+          "post_date": "28-01-2025",
+          "description": "Experimenta con vibraciones abstractas en esta obra única.",
+          "price": 88.20,
+          "art_type": "graffiti",
+          "votes": 5432
+        },
+        {
+          "id": "qrs6",
+          "image": "../assets/img/creations/Grafito5/.jpg",
+          "name": "Grafito5",
+          "post_date": "17-05-2025",
+          "description": "Explora rostros que emergen en la oscuridad de la noche.",
+          "price": 105.40,
+          "art_type": "Grafito",
+          "votes": 9876
+        },
+        {
+          "id": "tuv7",
+          "image": "../assets/img/creations/Lapicesdecolores6/.jpg",
+          "name": "Lapicesdecolores6",
+          "post_date": "04-09-2025",
+          "description": "Espejismos visuales que capturan la esencia de la vida urbana.",
+          "price": 115.60,
+          "art_type": "Lapicesdecolores",
+          "votes": 3210
+        },
+        {
+          "id": "wxy8",
+          "image": "../assets/img/creations/madera6/.jpg",
+          "name": "madera6",
+          "post_date": "22-12-2025",
+          "description": "Explora expresiones surrealistas en esta obra maestra única.",
+          "price": 99.90,
+          "art_type": "madera",
+          "votes": 8765
+        },
+        {
+          "id": "zab9",
+          "image": "../assets/img/creations/mix6/.jpg",
+          "name": "mix6",
+          "post_date": "09-04-2026",
+          "description": "La geometría cobra vida en esta expresión artística abstracta.",
+          "price": 130.90,
+          "art_type": "mix",
+          "votes": 210
+        },
+        {
+  "id": "a1b2",
+  "image": "../assets/img/creations/Oleo6/.jpg",
+  "name": "Oleo6",
+  "post_date": "12-11-2026",
+  "description": "Explora una visión surrealista en esta obra que desafía la realidad.",
+  "price": 95.75,
+  "art_type": "Oleo",
+  "votes": 4567
+}
+
+      ]
+    },
+    {
+  "id": "a1b2",
+  "username": "Fernando Jose",
+  "password": "fernandol3",
+  "email": "fernandol3@gmail.com",
+  "phone": "1234567890",
+  "birthday": "01-01-2000",
+  "money": 0,
+  "posts": [
+    {
+      "id": "c3d4",
+      "image": "../assets/img/creations/Pastel6/.jpg",
+      "name": "Pastel6",
+      "post_date": "15-02-2023",
+      "description": "Explora la efimeridad del arte en esta impactante obra.",
+      "price": 95.50,
+      "art_type": "Pastel",
+      "votes": 1234
+    },
+    {
+      "id": "e5f6",
+      "image": "../assets/img/creations/piedra6/.jpg",
+      "name": "piedra6",
+      "post_date": "05-06-2023",
+      "description": "Sumérgete en sueños abstractos a través de esta pintura única.",
+      "price": 110.25,
+      "art_type": "piedra",
+      "votes": 5678
+    },
+    {
+      "id": "g7h8",
+      "image": "../assets/img/creations/Temple6/.jpg",
+      "name": "Temple6",
+      "post_date": "23-10-2023",
+      "description": "Captura expresiones culturales en esta obra llena de significado.",
+      "price": 120.80,
+      "art_type": "Temple",
+      "votes": 910
+    },
+    {
+      "id": "i9j0",
+      "image": "../assets/img/creations/bronce6/.jpg",
+      "name": "bronce6",
+      "post_date": "11-02-2024",
+      "description": "Refleja el alma a través de esta pintura que despierta emociones.",
+      "price": 105.90,
+      "art_type": "bronce",
+      "votes": 2345
+    },
+    {
+      "id": "k1l2",
+      "image": "../assets/img/creations/Carboncillo6/.jpg",
+      "name": "Carboncillo6",
+      "post_date": "31-05-2024",
+      "description": "La naturaleza se convierte en abstracción en esta obra única.",
+      "price": 88.40,
+      "art_type": "Carboncillo",
+      "votes": 6789
+    },
+    {
+      "id": "m3n4",
+      "image": "../assets/img/creations/digital6/.jpg",
+      "name": "digital6",
+      "post_date": "18-09-2024",
+      "description": "Explora el ritmo geométrico en esta impactante creación artística.",
+      "price": 115.30,
+      "art_type": "digital",
+      "votes": 432
+    },
+    {
+      "id": "o5p6",
+      "image": "../assets/img/creations/edicion6/.jpg",
+      "name": "edicion6",
+      "post_date": "06-01-2025",
+      "description": "Una fusión de culturas representada en esta obra maestra.",
+      "price": 130.10,
+      "art_type": "edicion",
+      "votes": 876
+    },
+    {
+      "id": "q7r8",
+      "image": "../assets/img/creations/fotografia6/.jpg",
+      "name": "fotografia6",
+      "post_date": "25-04-2025",
+      "description": "Captura fragmentos del espacio en esta pintura intrigante.",
+      "price": 99.60,
+      "art_type": "fotografia",
+      "votes": 5432
+    },
+    {
+      "id": "s9t0",
+      "image": "../assets/img/creations/fotografia6/.jpg",
+      "name": "Gouache6",
+      "post_date": "14-08-2025",
+      "description": "Una sinfonía de formas y colores en esta obra visualmente impactante.",
+      "price": 105.25,
+      "art_type": "Gouache",
+      "votes": 1098
+    },
+    {
+      "id": "u1v2",
+      "image": "../assets/img/creations/graffiti6/.jpg",
+      "name": "graffiti6",
+      "post_date": "02-12-2025",
+      "description": "La abstracción cobra vida en un caleidoscopio de formas y colores.",
+      "price": 120.90,
+      "art_type": "graffiti",
+      "votes": 7654
+    },
+    {
+      "id": "w3x4",
+      "image": "../assets/img/creations/Ink6/.jpg",
+      "name": "Ink6",
+      "post_date": "20-03-2026",
+      "description": "Explora los ecos del pasado en esta obra maestra única.",
+      "price": 88.60,
+      "art_type": "Ink",
+      "votes": 321
+    },
+    {
+      "id": "y5z6",
+      "image": "../assets/img/creations/Grafito6/.jpg",
+      "name": "Grafito6",
+      "post_date": "07-07-2026",
+      "description": "La serenidad se materializa en esta obra abstracta y reflexiva.",
+      "price": 115.80,
+      "art_type": "Grafito",
+      "votes": 987
+    }
+  ]
+}
+
+  ],
   
 
   "favorites": [
