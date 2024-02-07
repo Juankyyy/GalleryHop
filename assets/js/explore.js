@@ -73,3 +73,27 @@ categoriesBtn.forEach(categorie => {
         categorie.classList.add("selected");
     })
 })
+
+//Logic for posts
+function showRandomPosts () {
+    fetch('http://localhost:3000/users')
+    .then(response => {
+        return response.json();
+    }).then(data => {
+        let allPosts = data.flatMap(user => user.posts);
+
+        const postsMezclados = allPosts.sort(() => Math.random() - 0.5);
+
+        let gallery = document.getElementById("gallery");
+
+        postsMezclados.forEach(post => {
+            let postElement = document.createElement("div");
+            postElement.classList.add("grid-item");
+            postElement.setAttribute("style", `background-image: url(${post.image});`);
+
+            gallery.appendChild(postElement);
+        });
+    })
+}
+
+showRandomPosts();
