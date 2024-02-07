@@ -1,9 +1,21 @@
 // Categories logic
 
+const categoriesItem = ["Grafito", "Carbon", "Lápices de colores", "Tinta", "Óleo", "Acrílico", "Acualera", "Gouache", "Temple", "Pintura al pastel", "Talla en madera", "Modelado en arcilla", "Escultura en piedra", "Fundición de bronce", "Ilustración digital", "Arte 3D", "Fotografía", "Edición fotográfica", "Grafitti", "Tecnica mixta"];
+
+const categoriesList = document.querySelector(".container-categories .categorie");
+categoriesItem.forEach(categorie => {
+    if (categorie.length > 8) {
+        Item = `<p class="category-item wide">${categorie}</p>`;
+    } else {
+        Item = `<p class="category-item">${categorie}</p>`;
+    }
+    const html = document.querySelector(".categorie").innerHTML;
+    document.querySelector(".categorie").innerHTML = Item + html;
+})
+
 // Categories slider
 
 const Slider = () => {
-    const categoriesList = document.querySelector(".container-categories .categorie");
     const btnSlide = document.querySelectorAll(".container-categories .btn-desplace");
     const sliderScrollbar = document.querySelector(".container-categories .categories-scrollbar");
     const scrollbarBar = sliderScrollbar.querySelector(".scrollbar-bar");
@@ -37,7 +49,7 @@ const Slider = () => {
     btnSlide.forEach(button => {
         button.addEventListener("click", () => {
             const direction = button.id === "prev-slide" ? -1 : 1;
-            const scroll = (categoriesList.clientWidth / 5) * direction;
+            const scroll = (categoriesList.clientWidth / 4.5) * direction;
             categoriesList.scrollBy({ left: scroll, behavior: "smooth" });
         });
     });
