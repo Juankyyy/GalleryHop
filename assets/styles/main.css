@@ -21,7 +21,12 @@ a {
 }
 
 /* --- --- --- LANDING --- --- --- */
+#particles-js canvas {
+    position: absolute;
+}
+
 .landing-text {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
