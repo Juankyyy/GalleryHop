@@ -1,29 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    /* margin-left: 5%;
-    min-height: 100vh; */
     color: white;
     background: #141C29;
-
 }
-.container-father{
+
+.container-father {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     padding-top: 30px;
-
 }
 
 .container {
-   display: flex;
-   gap: 10vw;
-
+    display: flex;
+    gap: 10vw;
 }
 
 .img-galery img {
@@ -35,8 +34,8 @@ body {
     position: absolute;
     transform: scaleX(-1);
     height: 90vh;
-    position:absolute;
-    left : 40%;
+    position: absolute;
+    left: 40%;
     z-index: -1;
 }
 
@@ -54,10 +53,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: height 1s ease;
 }
-
-
 
 .wrapper .form-box {
     width: 100%;
@@ -159,7 +155,6 @@ input {
     justify-content: center;
 }
 
-
 .login-register p a {
     text-decoration: none;
     font-weight: 600;
@@ -183,7 +178,6 @@ input {
 
 .login-register p a:hover {
     text-decoration: underline;
-
 }
 
 .accept-polity label a {
@@ -193,9 +187,127 @@ input {
 
 .accept-polity label a:hover {
     text-decoration: underline;
-
 }
 
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container-father {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .img-logo img {
+        height: 70vh;
+        width: 50vw;
+    }
+
+    .img {
+        margin-top: 100px;
+    }
+
+    .img-galery img {
+        height: 8vh;
+        margin-bottom: 60px;
+    }
+
+    .container-child {
+        margin-top: 40px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+    .img-logo img {
+        padding: 50px;
+        height: 70vh;
+        width: 65vw;
+    }
+
+    .img-galery img {
+        height: 7vh;
+        margin-bottom: 60px;
+    }
+
+    .container-child {
+        margin-top: 40px;
+        margin-left: 100px;
+        height: auto;
+    }
+
+    .wrapper {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .img-logo img {
+        height: 70vh;
+        width: 75vw;
+        margin-right: 50px;
+    }
+
+    .img-galery img {
+        height: 7vh;
+        margin-bottom: 50px;
+    }
+
+    .container-child {
+        margin-top: 20px;
+        height: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .img-logo img {
+        height: 70vh;
+        width: 75vw;
+    }
+
+    .img-galery img {
+        height: 6vh;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .img-logo img {
+        height: 70vh;
+        width: 90vw;
+    }
+
+    .img-galery img {
+        height: 6vh;
+        margin-bottom: 50px;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-left: 350px;
+    }
+
+
 }
