@@ -201,7 +201,7 @@ hr {
     position: absolute;
     top: 0;
     z-index: 5;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
