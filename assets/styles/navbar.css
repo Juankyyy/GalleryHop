@@ -20,6 +20,7 @@ a {
 .header {
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .navbar {
@@ -47,7 +48,6 @@ a {
 }
 
 .navbar-logo {
-    margin-right: 10px;
     line-height: 0px;
 }
 

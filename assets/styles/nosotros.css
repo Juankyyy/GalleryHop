@@ -22,25 +22,30 @@ a {
 }
 
 .wrapper {
-    margin-top: 15px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -59px;
+    height: 100dvh;
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container-father {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
 .container-mom {
     flex-direction: column;
+}
+
+.info-content {
+    display: flex;
+    justify-content: center;
 }
 
 .logo {
@@ -58,7 +63,6 @@ a {
     align-items: center;
     text-wrap: pretty;
     padding: 10px;
-    margin: 20px auto;
     width: 50dvw;
     background-color: #2D4263;
     opacity: 0.9;
@@ -99,9 +103,7 @@ button {
 }
 
 .img-logo img {
-    height: 95vh;
-    left: 0%;
-    margin: 30px;
+    width: 30dvw;
 }
 
 .join {
@@ -135,13 +137,6 @@ button {
 
 .mission-item h3,
 .how-it-works-item h3 {
-    text-align: center;
-}
-
-.developers-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -187,9 +182,18 @@ p {
     border-radius: 50%;
 }
 
-.developers-container {
-    margin-top: 200px;
+.developers-gallery {
+    color: #000;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.developers-container {
+    display: flex;
+    flex-wrap: wrap;
     width: 95%;
     justify-content: space-around;
     margin: 20px;
@@ -211,23 +215,20 @@ p {
     background-image: url(../img/arte\ \(4\).png);
 }
 
-.developer1,
-.developer2,
-.developer3,
-.developer4 {
+.card-developer {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
-    width: 35vh;
-    color: white;
+    background-position: right;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border-radius: 15px;
-    box-shadow: 20px 20px 90px rgba(0, 0, 0, 0.5);
-    opacity: 0.9;
-    margin-bottom: 20px;
+    gap: 15px;
+    color: #fff;
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px; 
 }
 
 .gallery-name h2 {
@@ -239,7 +240,7 @@ p {
 }
 
 .frase {
-    display: flex;
+    /* display: flex; */
     /* display: none; */
     justify-content: center;
     align-items: center;
@@ -259,13 +260,10 @@ p {
 }
 
 .developer-image {
-    height: 165px;
-    width: 165px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
 .developer-image img {
@@ -274,46 +272,48 @@ p {
     border-radius: 50%;
 }
 
-.social-media img {
-    height: 40px;
-    width: 40px;
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    gap: 15px;
 }
 
-@media (max-width:1440px) {
-    .img-logo img {
-        height: 60vh;
-        margin: 30px;
-    }
+.social-media svg {
+    transition: all 0.3s;
+}
+
+.social-media svg:hover {
+    transform: scale(1.2);
 }
 
 @media (max-width:1024px) {
-    .img-logo img {
-        height: 65vh;
-    }
-
-    .logo {
-        width: 400px;
-    }
-
-    .developers-container {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 900px) {
     body {
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
     }
 
-    .content {
-        width: unset;
-        padding: 5px;
+    .img-logo {
+        margin-top: 70px;
     }
 
-    .intro-container {
-        width: 90%;
+    .logo {
+        width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .content {
+        width: 95dvw;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    .info-content {
+        flex-direction: column;
     }
 
     .developers-container {
@@ -325,18 +325,39 @@ p {
         width: 80%;
     }
 
-    .container_2 {
+    .wrapper {
         flex-direction: column;
         align-items: center;
+        height: max-content;
     }
 
     .logo {
         width: 300px;
     }
+}
 
+@media (max-width: 900px) {
     .img-logo img {
-        height: 30vh;
-        left: 0%;
-        margin: 30px;
+        width: 190px;
+    }
+
+    .developers-gallery {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card-developer {
+        width: 250px;
+        height: 400px;
+    }
+
+    .developer-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gallery-name h2 {
+        font-size: 30px;
     }
 }
