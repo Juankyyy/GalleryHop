@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/navbar.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/theme.css">
     <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/main.js"defer></script>
     <script src="./assets/js/navbar.js" defer></script>
     <link rel="shortcut icon" href="https://i.postimg.cc/KY4cbJws/Favicon.png" type="image/x-icon">
     <title>Gallery Hop</title>
@@ -223,7 +225,7 @@
     <main>
         <section id="particles-js" class="landing-text">
             <div class="logo-text">
-                <img src="./assets/img/GHText.png" alt="Text Logo">
+                <img class="logo-text-img" src="./assets/img/GHText.png" alt="Text Logo">
             </div>
 
             <div class="quoute">
@@ -239,7 +241,7 @@
             <div class="categories-content">
                 <div class="categories-content-imgs">
                     <div class="subtitle">
-                        <p>Fantasy</p>
+                        <p>3D</p>
                     </div>
 
                     <div class="slider">
@@ -253,7 +255,7 @@
 
                 <div class="categories-content-imgs">
                     <div class="subtitle">
-                        <p>Fantasy</p>
+                        <p>Acrylic</p>
                     </div>
 
                     <div class="slider">
@@ -271,7 +273,7 @@
             <div class="categories-content">
                 <div class="categories-content-imgs">
                     <div class="subtitle">
-                        <p>Fantasy</p>
+                        <p>Digital</p>
                     </div>
 
                     <div class="slider">
@@ -285,7 +287,7 @@
 
                 <div class="categories-content-imgs">
                     <div class="subtitle">
-                        <p>Fantasy</p>
+                        <p>Photography</p>
                     </div>
 
                     <div class="slider">
@@ -364,121 +366,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        particlesJS(
-            {
-                "particles": {
-                    "number": {
-                        "value": 130,
-                        "density": {
-                            "enable": true,
-                            "value_area": 800
-                        }
-                    },
-                    "color": {
-                        "value": "#ffffff"
-                    },
-                    "shape": {
-                        "type": "circle",
-                        "stroke": {
-                            "width": 0,
-                            "color": "#000000"
-                        },
-                        "polygon": {
-                            "nb_sides": 5
-                        },
-                        "image": {
-                            "src": "img/github.svg",
-                            "width": 100,
-                            "height": 100
-                        }
-                    },
-                    "opacity": {
-                        "value": 0.5,
-                        "random": false,
-                        "anim": {
-                            "enable": false,
-                            "speed": 1,
-                            "opacity_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "size": {
-                        "value": 3,
-                        "random": true,
-                        "anim": {
-                            "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
-                            "sync": false
-                        }
-                    },
-                    "line_linked": {
-                        "enable": true,
-                        "distance": 150,
-                        "color": "#000",
-                        "opacity": 0.4,
-                        "width": 1
-                    },
-                    "move": {
-                        "enable": true,
-                        "speed": 6,
-                        "direction": "none",
-                        "random": false,
-                        "straight": false,
-                        "out_mode": "out",
-                        "bounce": false,
-                        "attract": {
-                            "enable": false,
-                            "rotateX": 600,
-                            "rotateY": 1200
-                        }
-                    }
-                },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": {
-                        "onhover": {
-                            "enable": true,
-                            "mode": "repulse"
-                        },
-                        "onclick": {
-                            "enable": true,
-                            "mode": "push"
-                        },
-                        "resize": true
-                    },
-                    "modes": {
-                        "grab": {
-                            "distance": 400,
-                            "line_linked": {
-                                "opacity": 1
-                            }
-                        },
-                        "bubble": {
-                            "distance": 400,
-                            "size": 40,
-                            "duration": 2,
-                            "opacity": 8,
-                            "speed": 3
-                        },
-                        "repulse": {
-                            "distance": 150,
-                            "duration": 0.4
-                        },
-                        "push": {
-                            "particles_nb": 4
-                        },
-                        "remove": {
-                            "particles_nb": 2
-                        }
-                    }
-                },
-                "retina_detect": false
-            }
-        )
-    </script>
 </body>
 
 </html>

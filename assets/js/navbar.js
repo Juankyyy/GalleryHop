@@ -53,12 +53,12 @@ if (localStorage.id) {
     const userLogin = document.querySelector(".navbar-login-a");
     userLogin.style.display = "flex";
     const userLoginMenu = document.querySelector(".navbar-login-menu");
-    userLoginMenu.style.display = "flex";
+    userLoginMenu.style.display = "block";
 
     // Profile btn
 
     const userProfile = document.querySelector(".navbar-profile-a");
     userProfile.style.display = "none";
     const userProfileMenu = document.querySelector(".navbar-profile-menu");
-    userProfileMenu.style.display = "none";
+    userProfileMenu.style.display = "block";
 }
