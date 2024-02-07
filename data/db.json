@@ -17,7 +17,7 @@
           "post_date": "06-02-2024",
           "description": "Una impactante amalgama de formas y colores que invita a contemplar la expresión única de la creatividad.",
           "price": "50",
-          "art_type": "3dart",
+          "art_type": "Arte 3D",
           "votes": "100"
         },
         {
@@ -47,7 +47,7 @@
           "post_date": "20-09-2023",
           "description": "Una escultura única que juega con la forma y el espacio, desafiando la percepción.",
           "price": "90",
-          "art_type": "arcilla",
+          "art_type": "Arcilla",
           "votes": "789"
         },
         {
@@ -57,7 +57,7 @@
           "post_date": "03-01-2024",
           "description": "Exploración digital que fusiona tecnología y creatividad en un viaje visual fascinante.",
           "price": "65",
-          "art_type": "bronce",
+          "art_type": "Fundición de bronce",
           "votes": "432"
         },
         {
@@ -77,7 +77,7 @@
           "post_date": "22-11-2023",
           "description": "Una fusión audaz de materiales que da vida a una obra única y trascendental.",
           "price": "85",
-          "art_type": "digital",
+          "art_type": "Ilustración digital",
           "votes": "654"
         },
         {
@@ -87,7 +87,7 @@
           "post_date": "30-03-2024",
           "description": "Paisaje que transporta al espectador a mundos lejanos, llenos de serenidad y asombro.",
           "price": "110",
-          "art_type": "edicion",
+          "art_type": "Edición fotográfica",
           "votes": "876"
         },
         {
@@ -97,7 +97,7 @@
           "post_date": "17-08-2023",
           "description": "Retrato que captura la esencia única de su sujeto, transmitiendo emociones profundas.",
           "price": "55",
-          "art_type": "fotografia",
+          "art_type": "Fotografia",
           "votes": "543"
         },
         {
@@ -117,7 +117,7 @@
           "post_date": "25-06-2023",
           "description": "Expresión contemporánea que desafía las normas, provocando reflexión y asombro.",
           "price": "95",
-          "art_type": "graffiti",
+          "art_type": "Graffiti",
           "votes": "765"
         },
         {
@@ -149,7 +149,7 @@
           "post_date": "02-07-2023",
           "description": "Una exploración abstracta que despierta la imaginación y cuestiona la realidad.",
           "price": "60",
-          "art_type": "3dart",
+          "art_type": "Arte 3D",
           "votes": "234"
         },
         {
@@ -179,7 +179,7 @@
           "post_date": "29-01-2024",
           "description": "Exploración digital que fusiona patrones futuristas con elementos orgánicos.",
           "price": "70",
-          "art_type": "arcilla",
+          "art_type": "Arcilla",
           "votes": "432"
         },
         {
@@ -189,7 +189,7 @@
           "post_date": "07-04-2023",
           "description": "Fotografía que captura la belleza efímera de la naturaleza en su máximo esplendor.",
           "price": "45",
-          "art_type": "bronce",
+          "art_type": "Fundición de bronce",
           "votes": "321"
         },
         {
@@ -209,7 +209,7 @@
           "post_date": "15-06-2023",
           "description": "Paisaje que evoca una sensación de serenidad y conexión con la naturaleza.",
           "price": "110",
-          "art_type": "digital",
+          "art_type": "Ilustración digital",
           "votes": "876"
         },
         {
@@ -219,7 +219,7 @@
           "post_date": "04-11-2023",
           "description": "Retrato íntimo que revela la complejidad y la belleza única de cada individuo.",
           "price": "55",
-          "art_type": "edicion",
+          "art_type": "Edición fotográfica",
           "votes": "543"
         },
         {
@@ -229,7 +229,7 @@
           "post_date": "12-02-2024",
           "description": "Colage visual que explora la yuxtaposición de elementos para crear nuevas narrativas.",
           "price": "70",
-          "art_type": "fotografia",
+          "art_type": "Fotografia",
           "votes": "432"
         },
         {
@@ -249,7 +249,7 @@
           "post_date": "08-05-2024",
           "description": "Detalle realista que revela la belleza en lo ordinario, capturando momentos fugaces.",
           "price": "80",
-          "art_type": "graffiti",
+          "art_type": "Graffiti",
           "votes": "987"
         },
         {
@@ -281,7 +281,7 @@
           "post_date": "01-08-2023",
           "description": "Una inmersión en lo abstracto, donde los colores y las formas se entrelazan en armonía.",
           "price": "75",
-          "art_type": "3dart",
+          "art_type": "Arte 3D",
           "votes": "567"
         },
         {
@@ -311,7 +311,7 @@
           "post_date": "27-04-2023",
           "description": "Exploración digital que fusiona la realidad y la fantasía en una experiencia visual única.",
           "price": "65",
-          "art_type": "arcilla",
+          "art_type": "Arcilla",
           "votes": "432"
         },
         {
@@ -321,7 +321,7 @@
           "post_date": "06-10-2023",
           "description": "Captura fotográfica que revela la belleza en la simplicidad de la vida cotidiana.",
           "price": "40",
-          "art_type": "bronce",
+          "art_type": "Fundición de bronce",
           "votes": "321"
         },
         {
@@ -341,7 +341,7 @@
           "post_date": "03-12-2023",
           "description": "Paisaje que transporta al espectador a un mundo de serenidad y contemplación.",
           "price": "120",
-          "art_type": "digital",
+          "art_type": "Ilustración digital",
           "votes": "876"
         },
         {
@@ -351,7 +351,7 @@
           "post_date": "16-07-2023",
           "description": "Retrato que captura la esencia única de su sujeto, transmitiendo emociones profundas.",
           "price": "55",
-          "art_type": "edicion",
+          "art_type": "Edición fotográfica",
           "votes": "543"
         },
         {
@@ -361,7 +361,7 @@
           "post_date": "08-01-2024",
           "description": "Colage visual que fusiona elementos diversos para crear una narrativa visual intrigante.",
           "price": "70",
-          "art_type": "fotografia",
+          "art_type": "Fotografia",
           "votes": "432"
         },
         {
@@ -381,7 +381,7 @@
           "post_date": "05-06-2024",
           "description": "Detalle realista que captura la esencia de la realidad con una precisión asombrosa.",
           "price": "80",
-          "art_type": "graffiti",
+          "art_type": "Graffiti",
           "votes": "987"
         },
         {
@@ -413,7 +413,7 @@
           "post_date": "09-06-2023",
           "description": "Una exploración abstracta que despierta la imaginación y fomenta la contemplación.",
           "price": "60",
-          "art_type": "Ink",
+          "art_type": "Tinta",
           "votes": "234"
         },
         {
@@ -423,7 +423,7 @@
           "post_date": "25-09-2023",
           "description": "Pintura que trasciende las barreras y comunica emociones más allá de las palabras.",
           "price": "85",
-          "art_type": "Lapicesdecolores",
+          "art_type": "Lápices de colores",
           "votes": "567"
         },
         {
@@ -433,7 +433,7 @@
           "post_date": "18-04-2024",
           "description": "Escultura que explora la conexión entre la forma humana y el entorno circundante.",
           "price": "95",
-          "art_type": "madera",
+          "art_type": "Talla en madera",
           "votes": "890"
         },
         {
@@ -443,7 +443,7 @@
           "post_date": "05-11-2023",
           "description": "Exploración digital que fusiona la realidad y la fantasía en una experiencia visual única.",
           "price": "70",
-          "art_type": "mix",
+          "art_type": "Mixto",
           "votes": "432"
         },
         {
@@ -453,7 +453,7 @@
           "post_date": "13-03-2023",
           "description": "Fotografía que captura la esencia de la vida urbana, con sus contrastes y diversidad.",
           "price": "40",
-          "art_type": "Oleo",
+          "art_type": "Óleo",
           "votes": "321"
         },
         {
@@ -473,7 +473,7 @@
           "post_date": "22-01-2024",
           "description": "Paisaje que evoca una sensación de serenidad y conexión con la naturaleza.",
           "price": "120",
-          "art_type": "piedra",
+          "art_type": "Escultura en piedra",
           "votes": "876"
         },
         {
@@ -493,7 +493,7 @@
           "post_date": "17-12-2023",
           "description": "Colage visual que explora la yuxtaposición de elementos para crear nuevas narrativas.",
           "price": "70",
-          "art_type": "3dart",
+          "art_type": "Arte 3D",
           "votes": "432"
         },
         {
@@ -523,7 +523,7 @@
           "post_date": "14-09-2023",
           "description": "Exploración abstracta que invita a la contemplación y la conexión con lo inexplicable.",
           "price": "60",
-          "art_type": "arcilla",
+          "art_type": "Arcilla",
           "votes": "234"
         }
       ]
@@ -545,7 +545,7 @@
           "post_date": "05-05-2023",
           "description": "Una exploración abstracta que despierta la imaginación y fomenta la contemplación.",
           "price": "60",
-          "art_type": "Ink",
+          "art_type": "Tinta",
           "votes": "234"
         },
         {
@@ -555,7 +555,7 @@
           "post_date": "21-10-2023",
           "description": "Pintura que trasciende las barreras y comunica emociones más allá de las palabras.",
           "price": "85",
-          "art_type": "Lapicesdecolores",
+          "art_type": "Lápices de colores",
           "votes": "567"
         },
         {
@@ -565,7 +565,7 @@
           "post_date": "14-05-2024",
           "description": "Escultura que explora la conexión entre la forma humana y el entorno circundante.",
           "price": "95",
-          "art_type": "madera",
+          "art_type": "Talla en madera",
           "votes": "890"
         },
         {
@@ -575,7 +575,7 @@
           "post_date": "06-12-2023",
           "description": "Exploración digital que fusiona la realidad y la fantasía en una experiencia visual única.",
           "price": "70",
-          "art_type": "mix",
+          "art_type": "Mixto",
           "votes": "432"
         },
         {
@@ -585,7 +585,7 @@
           "post_date": "15-08-2023",
           "description": "Captura fotográfica que revela la esencia de la vida urbana, con sus contrastes y diversidad.",
           "price": "40",
-          "art_type": "Oleo",
+          "art_type": "Óleo",
           "votes": "321"
         },
         {
@@ -605,7 +605,7 @@
           "post_date": "23-07-2023",
           "description": "Paisaje que evoca una sensación de serenidad y conexión con la naturaleza.",
           "price": "120",
-          "art_type": "piedra",
+          "art_type": "Escultura en piedra",
           "votes": "876"
         },
         {
@@ -625,7 +625,7 @@
           "post_date": "18-08-2023",
           "description": "Colage visual que explora la yuxtaposición de elementos para crear nuevas narrativas.",
           "price": "70",
-          "art_type": "3dart",
+          "art_type": "Arte 3D",
           "votes": "432"
         },
         {
@@ -655,7 +655,7 @@
           "post_date": "22-03-2023",
           "description": "Exploración abstracta que invita a la contemplación y la conexión con lo inexplicable.",
           "price": "60",
-          "art_type": "arcilla",
+          "art_type": "Arcilla",
           "votes": "234"
         }
       ]
@@ -677,7 +677,7 @@
           "post_date": "02-05-2023",
           "description": "Captura la energía del amanecer con esta pintura vibrante.",
           "price": 85.20,
-          "art_type": "Ink",
+          "art_type": "Tinta",
           "votes": 7890
         },
         {
@@ -687,7 +687,7 @@
           "post_date": "18-08-2023",
           "description": "Explora mundos surrealistas a través de esta obra de arte única.",
           "price": 110.75,
-          "art_type": "Lapicesdecolores",
+          "art_type": "Lápices de colores",
           "votes": 4567
         },
         {
@@ -697,7 +697,7 @@
           "post_date": "07-12-2023",
           "description": "Una fusión de formas y colores en una expresión abstracta.",
           "price": 95.50,
-          "art_type": "madera",
+          "art_type": "Talla en madera",
           "votes": 2310
         },
         {
@@ -707,7 +707,7 @@
           "post_date": "25-02-2024",
           "description": "Explora realidades alternativas a través de esta pintura intrigante.",
           "price": 120.30,
-          "art_type": "mix",
+          "art_type": "Mixto",
           "votes": 876
         },
         {
@@ -717,7 +717,7 @@
           "post_date": "14-05-2024",
           "description": "Una visión surrealista que desafía la percepción convencional.",
           "price": 99.90,
-          "art_type": "Oleo",
+          "art_type": "Óleo",
           "votes": 543
         },
         {
@@ -737,7 +737,7 @@
           "post_date": "19-01-2025",
           "description": "La abstracción cobra vida con un juego dinámico de formas y líneas.",
           "price": 105.40,
-          "art_type": "piedra",
+          "art_type": "Escultura en piedra",
           "votes": 432
         },
         {
@@ -757,7 +757,7 @@
           "post_date": "23-07-2025",
           "description": "La simplicidad habla volumenes en este expresivo cuadro abstracto.",
           "price": 80.20,
-          "art_type": "3dart",
+          "art_type": "Arte 3D",
           "votes": 765
         },
         {
@@ -799,7 +799,7 @@
           "post_date": "16-02-2023",
           "description": "Una obra que captura la esencia del movimiento en el arte.",
           "price": 120.80,
-          "art_type": "Ink",
+          "art_type": "Tinta",
           "votes": 5432
         },
         {
@@ -809,7 +809,7 @@
           "post_date": "08-05-2023",
           "description": "Explora la arquitectura desde perspectivas únicas en esta pintura.",
           "price": 95.50,
-          "art_type": "Lapicesdecolores",
+          "art_type": "Lápices de colores",
           "votes": 2109
         },
         {
@@ -819,7 +819,7 @@
           "post_date": "22-08-2023",
           "description": "Reflejos artísticos que capturan la belleza de la naturaleza.",
           "price": 135.90,
-          "art_type": "madera",
+          "art_type": "Talla en madera",
           "votes": 8765
         },
         {
@@ -829,7 +829,7 @@
           "post_date": "04-12-2023",
           "description": "Explora una variedad de emociones a través de retratos expresivos.",
           "price": 140.60,
-          "art_type": "mix",
+          "art_type": "Mixto",
           "votes": 3210
         },
         {
@@ -839,7 +839,7 @@
           "post_date": "19-03-2024",
           "description": "La combinación de colores da vida a esta expresión abstracta.",
           "price": 105.30,
-          "art_type": "Oleo",
+          "art_type": "Óleo",
           "votes": 4321
         },
         {
@@ -859,7 +859,7 @@
           "post_date": "14-09-2024",
           "description": "Captura la esencia de la ciudad a través de rostros urbanos.",
           "price": 110.75,
-          "art_type": "piedra",
+          "art_type": "Escultura en piedra",
           "votes": 765
         },
         {
@@ -879,7 +879,7 @@
           "post_date": "21-04-2025",
           "description": "Misteriosas visiones artísticas que se revelan en la oscuridad.",
           "price": 88.20,
-          "art_type": "arcilla",
+          "art_type": "Arcilla",
           "votes": 2345
         },
         {
@@ -889,7 +889,7 @@
           "post_date": "08-08-2025",
           "description": "Explora la geometría en esta abstracción artística única.",
           "price": 115.60,
-          "art_type": "bronce",
+          "art_type": "Fundición de bronce",
           "votes": 876
         },
         {
@@ -909,7 +909,7 @@
           "post_date": "14-02-2026",
           "description": "Captura fragmentos del tiempo en esta obra maestra única.",
           "price": 105.60,
-          "art_type": "digital",
+          "art_type": "Ilustración digital",
           "votes": 210
         }
       ]
@@ -931,7 +931,7 @@
           "post_date": "02-03-2023",
           "description": "Una explosión de colores se fusiona en esta vibrante obra de arte.",
           "price": 95.50,
-          "art_type": "edicion",
+          "art_type": "Edición fotográfica",
           "votes": 8765
         },
         {
@@ -941,7 +941,7 @@
           "post_date": "20-06-2023",
           "description": "Descubre los misterios ocultos de la naturaleza en esta pintura.",
           "price": 135.90,
-          "art_type": "fotografia",
+          "art_type": "Fotografia",
           "votes": 3210
         },
         {
@@ -961,7 +961,7 @@
           "post_date": "26-12-2023",
           "description": "Explora un universo abstracto a través de esta fascinante pintura.",
           "price": 120.30,
-          "art_type": "graffiti",
+          "art_type": "Graffiti",
           "votes": 2109
         },
         {
@@ -981,7 +981,7 @@
           "post_date": "19-09-2024",
           "description": "La abstracción cobra vida con movimientos cinéticos en esta pintura.",
           "price": 105.40,
-          "art_type": "Lapicesdecolores",
+          "art_type": "Lápices de colores",
           "votes": 4321
         },
         {
@@ -991,7 +991,7 @@
           "post_date": "07-01-2025",
           "description": "Explora visiones surrealistas en esta obra que desafía la realidad.",
           "price": 130.90,
-          "art_type": "madera",
+          "art_type": "Talla en madera",
           "votes": 9876
         },
         {
@@ -1001,7 +1001,7 @@
           "post_date": "26-04-2025",
           "description": "Expresiones artísticas que reflejan la vida urbana contemporánea.",
           "price": 88.75,
-          "art_type": "mix",
+          "art_type": "Mixto",
           "votes": 765
         },
         {
@@ -1011,7 +1011,7 @@
           "post_date": "14-08-2025",
           "description": "Embárcate en una aventura abstracta a través de esta pintura única.",
           "price": 95.75,
-          "art_type": "Oleo",
+          "art_type": "Óleo",
           "votes": 2345
         },
         {
@@ -1031,7 +1031,7 @@
           "post_date": "21-03-2026",
           "description": "Captura fragmentos del tiempo en esta obra maestra única.",
           "price": 105.60,
-          "art_type": "piedra",
+          "art_type": "Escultura en piedra",
           "votes": 210
         },
         {
@@ -1063,7 +1063,7 @@
           "post_date": "12-04-2023",
           "description": "Captura la esencia de las luces urbanas en esta obra artística.",
           "price": 110.75,
-          "art_type": "bronce",
+          "art_type": "Fundición de bronce",
           "votes": 1098
         },
         {
@@ -1083,7 +1083,7 @@
           "post_date": "17-11-2023",
           "description": "Visiones artísticas que toman forma a través de elementos esculturales.",
           "price": 99.90,
-          "art_type": "digital",
+          "art_type": "Ilustración digital",
           "votes": 2345
         },
         {
@@ -1093,7 +1093,7 @@
           "post_date": "04-03-2024",
           "description": "Reflejos artísticos que capturan la esencia de la vida urbana.",
           "price": 105.60,
-          "art_type": "edicion",
+          "art_type": "Edición fotográfica",
           "votes": 876
         },
         {
@@ -1103,7 +1103,7 @@
           "post_date": "22-06-2024",
           "description": "Una sinfonía visual que celebra la diversidad de colores.",
           "price": 95.75,
-          "art_type": "fotografia",
+          "art_type": "Fotografia",
           "votes": 4321
         },
         {
@@ -1123,7 +1123,7 @@
           "post_date": "28-01-2025",
           "description": "Experimenta con vibraciones abstractas en esta obra única.",
           "price": 88.20,
-          "art_type": "graffiti",
+          "art_type": "Graffiti",
           "votes": 5432
         },
         {
@@ -1143,7 +1143,7 @@
           "post_date": "04-09-2025",
           "description": "Espejismos visuales que capturan la esencia de la vida urbana.",
           "price": 115.60,
-          "art_type": "Lapicesdecolores",
+          "art_type": "Lápices de colores",
           "votes": 3210
         },
         {
@@ -1153,7 +1153,7 @@
           "post_date": "22-12-2025",
           "description": "Explora expresiones surrealistas en esta obra maestra única.",
           "price": 99.90,
-          "art_type": "madera",
+          "art_type": "Talla en madera",
           "votes": 8765
         },
         {
@@ -1163,7 +1163,7 @@
           "post_date": "09-04-2026",
           "description": "La geometría cobra vida en esta expresión artística abstracta.",
           "price": 130.90,
-          "art_type": "mix",
+          "art_type": "Mixto",
           "votes": 210
         },
         {
@@ -1173,7 +1173,7 @@
           "post_date": "12-11-2026",
           "description": "Explora una visión surrealista en esta obra que desafía la realidad.",
           "price": 95.75,
-          "art_type": "Oleo",
+          "art_type": "Óleo",
           "votes": 4567
         }
       ]
@@ -1205,7 +1205,7 @@
           "post_date": "05-06-2023",
           "description": "Sumérgete en sueños abstractos a través de esta pintura única.",
           "price": 110.25,
-          "art_type": "piedra",
+          "art_type": "Escultura en piedra",
           "votes": 5678
         },
         {
@@ -1225,7 +1225,7 @@
           "post_date": "11-02-2024",
           "description": "Refleja el alma a través de esta pintura que despierta emociones.",
           "price": 105.90,
-          "art_type": "bronce",
+          "art_type": "Fundición de bronce",
           "votes": 2345
         },
         {
@@ -1245,7 +1245,7 @@
           "post_date": "18-09-2024",
           "description": "Explora el ritmo geométrico en esta impactante creación artística.",
           "price": 115.30,
-          "art_type": "digital",
+          "art_type": "Ilustración digital",
           "votes": 432
         },
         {
@@ -1255,7 +1255,7 @@
           "post_date": "06-01-2025",
           "description": "Una fusión de culturas representada en esta obra maestra.",
           "price": 130.10,
-          "art_type": "edicion",
+          "art_type": "Edición fotográfica",
           "votes": 876
         },
         {
@@ -1265,7 +1265,7 @@
           "post_date": "25-04-2025",
           "description": "Captura fragmentos del espacio en esta pintura intrigante.",
           "price": 99.60,
-          "art_type": "fotografia",
+          "art_type": "Fotografia",
           "votes": 5432
         },
         {
@@ -1285,7 +1285,7 @@
           "post_date": "02-12-2025",
           "description": "La abstracción cobra vida en un caleidoscopio de formas y colores.",
           "price": 120.90,
-          "art_type": "graffiti",
+          "art_type": "Graffiti",
           "votes": 7654
         },
         {
@@ -1295,7 +1295,7 @@
           "post_date": "20-03-2026",
           "description": "Explora los ecos del pasado en esta obra maestra única.",
           "price": 88.60,
-          "art_type": "Ink",
+          "art_type": "Tinta",
           "votes": 321
         },
         {

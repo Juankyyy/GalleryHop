@@ -1,17 +1,13 @@
 // Categories logic
 
-const categoriesItem = ["Grafito", "Carbon", "Lápices de colores", "Tinta", "Óleo", "Acrílico", "Acualera", "Gouache", "Temple", "Pintura al pastel", "Talla en madera", "Modelado en arcilla", "Escultura en piedra", "Fundición de bronce", "Ilustración digital", "Arte 3D", "Fotografía", "Edición fotográfica", "Grafitti", "Tecnica mixta"];
-
+const categoriesItem = ["Grafito", "Carboncillo", "Lápices de colores", "Tinta", "Óleo", "Acrilico", "Acuarela", "Gouache", "Temple", "Pastel", "Talla en madera", "Arcilla", "Escultura en piedra", "Fundición de bronce", "Ilustración digital", "Arte 3D", "Fotografia", "Edición fotográfica", "Grafitti", "Mixta"];
 const categoriesList = document.querySelector(".container-categories .categorie");
+
 categoriesItem.forEach(categorie => {
-    if (categorie.length > 8) {
-        Item = `<p class="category-item wide">${categorie}</p>`;
-    } else {
-        Item = `<p class="category-item">${categorie}</p>`;
-    }
-    const html = document.querySelector(".categorie").innerHTML;
-    document.querySelector(".categorie").innerHTML = Item + html;
-})
+    const itemClass = categorie.length > 8 ? "category-item wide" : "category-item";
+    const item = `<p class="${itemClass}">${categorie}</p>`;
+    categoriesList.innerHTML += item;
+});
 
 // Categories slider
 
@@ -77,6 +73,7 @@ window.addEventListener("load", Slider);
 // Select categories
 
 const categoriesBtn = document.querySelectorAll(".category-item");
+
 categoriesBtn.forEach(categorie => {
     categorie.addEventListener("click", () => {
         categoriesBtn.forEach(categorie2 => {
@@ -87,7 +84,7 @@ categoriesBtn.forEach(categorie => {
 })
 
 //Logic for posts
-function showRandomPosts () {
+/*function showRandomPosts () {
     fetch('http://localhost:3000/users')
     .then(response => {
         return response.json();
@@ -101,11 +98,51 @@ function showRandomPosts () {
         postsMezclados.forEach(post => {
             let postElement = document.createElement("div");
             postElement.classList.add("grid-item");
-            postElement.setAttribute("style", `background-image: url(${post.image});`);
+            postElement.setAttribute("style", `background-image: url(${post.image})`);
+            postElement.setAttribute("name", `${post.art_type}`);
 
             gallery.appendChild(postElement);
         });
     })
+}*/
+
+let allPosts;
+
+function showRandomPosts() {
+    fetch('http://localhost:3000/users')
+        .then(response => response.json())
+        .then(data => {
+            allPosts = data.flatMap(user => user.posts);
+            filterPosts("all"); // Mostrar todos los posts al principio
+        });
 }
 
+function filterPosts(category) {
+    const gallery = document.getElementById("gallery");
+
+    // Limpiar la galería antes de agregar los elementos filtrados
+    gallery.innerHTML = "";
+
+    // Filtrar posts según la categoría seleccionada
+    const filteredPosts = category == "all" ? allPosts : allPosts.filter(post => post.art_type == category);
+
+    // Crear elementos de div para los posts filtrados
+    filteredPosts.forEach(post => {
+        let postElement = document.createElement("div");
+        postElement.classList.add("grid-item");
+        postElement.style.backgroundImage = `url(${post.image})`;
+        postElement.setAttribute("name", `${post.art_type}`);
+        gallery.appendChild(postElement);
+    });
+}
+
+// Agregar eventos de clic a los botones de categoría
+categoriesBtn.forEach(btn => {
+    btn.addEventListener("click", function () {
+        const category = this.textContent; // Obtener la categoría del texto del botón
+        filterPosts(category);
+    });
+});
+
+// Mostrar todos los posts al cargar la página
 showRandomPosts();
