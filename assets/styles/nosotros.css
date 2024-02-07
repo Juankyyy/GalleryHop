@@ -58,6 +58,7 @@ a {
 }
 
 .content {
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -74,13 +74,16 @@ if (localStorage.id) {
 
     // Sign Out
 
-    const signOut = document.querySelector(".navbar-signout")
-    signOut.style.display = "none";
-    const signOutMenu = document.querySelector(".navbar-signout-menu");
-    userLoginMenu.style.display = "none";
+    if (signOut) {
+        const signOut = document.querySelector(".navbar-signout")
+        signOut.style.display = "none";
+        const signOutMenu = document.querySelector(".navbar-signout-menu");
+        signOutMenu.style.display = "none";
+    }
 }
-
-signOut.addEventListener("click", () => {
-    localStorage.clear();
-    location.href = "../index.html"
-})
+if (signOut) {
+    signOut.addEventListener("click", () => {
+        localStorage.clear();
+        location.href = "../index.html"
+    })
+}

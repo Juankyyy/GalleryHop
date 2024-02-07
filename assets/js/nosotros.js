@@ -12,3 +12,18 @@ verMasBtn.addEventListener("click", () => {
         verMasBtn.textContent = "Ver menos";
     }
 });
+
+const titleDev = document.querySelector(".developers-gallery-text")
+
+assignTheme()
+dark.addEventListener("click", ()=> {
+    assignTheme();
+})
+
+function assignTheme() {
+    if (localStorage.theme = "dark") {
+        titleDev.style = "color: #fff;"
+    } else {
+        titleDev.style = "color: #000;"
+    }
+}
