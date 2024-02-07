@@ -15,7 +15,7 @@ function particlesLight() {
                 "shape": {
                     "type": "circle",
                     "stroke": {
-                        "width": 0,
+                        "width": 1,
                         "color": "#000000"
                     },
                     "polygon": {
@@ -130,8 +130,8 @@ function particlesDark() {
                 "shape": {
                     "type": "circle",
                     "stroke": {
-                        "width": 0,
-                        "color": "#000000"
+                        "width": 1,
+                        "color": "#fff"
                     },
                     "polygon": {
                         "nb_sides": 5

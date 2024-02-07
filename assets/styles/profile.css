@@ -224,7 +224,7 @@ main {
 }
 
 .creations-img img {
-    cursor: zoom-in;
+    cursor: pointer;
     width: 300px;
     height: 200px;
     border-radius: 6px;
