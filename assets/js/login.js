@@ -30,14 +30,14 @@ btnLogin.addEventListener("click", function () {
     .then(response => {
         return response.json();
     }).then(data => {
-        let usuarioEncontrado = data.some(element => {
+        let user = data.find(element => {
             return element.username === username.value && element.password === password.value;
         });
 
-        if (usuarioEncontrado) {
+        if (user) {
             avisoLogIn.innerHTML = "";
 
-            localStorage.setItem('id', element.id);
+            localStorage.setItem('id', user.id);
 
             location.href = "../index.html";
         } else {
