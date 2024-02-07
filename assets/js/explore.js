@@ -130,8 +130,31 @@ function filterPosts(category) {
     filteredPosts.forEach(post => {
         let postElement = document.createElement("div");
         postElement.classList.add("grid-item");
+        postElement.setAttribute("id", `${post.id}`);
         postElement.style.backgroundImage = `url(${post.image})`;
         postElement.setAttribute("name", `${post.art_type}`);
+
+        // Función para mostrar los datos del post
+
+        postElement.addEventListener("click", () => {
+            fetch('http://localhost:3000/users')
+                .then(response => response.json())
+                .then(data => {
+                    allPosts = data.flatMap(user => user.posts);
+
+                    allPosts.forEach(post => {
+                        if (post.id === postElement.id) {
+                            console.log(post);
+
+                        }
+                    })
+                });
+        })
+
+
+
+
+
         gallery.appendChild(postElement);
     });
 }
