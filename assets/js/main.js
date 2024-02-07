@@ -265,3 +265,101 @@ function assignTheme() {
         particlesLight();
     }
 }
+
+// Slider logic
+
+let categories=document.getElementById("categories-content")
+
+fetch ("http://localhost:3000/users")
+.then((result)=>result.json())
+.then((data)=>{
+
+    for(let i in users.posts )
+    if (art_type=Acrilico) ;
+    const firstPost = firstUser.posts[0];
+
+    let postImg = document.createElement("img");
+    postImg.src = firstPost.image;
+    postImg.alt = firstPost.name; 
+    modalContent.appendChild(postImg);
+
+
+    let divCategoria1 = document.createElement("div")
+    categories.appendChild(divCategoria1);
+    
+        let Categoria1=document.createElement("div")
+        divCategoria1.appendChild(Categoria1);
+        
+        let img1Cate1 = document.createElement("img");
+        img1Cate1.src = 
+        Categoria1.appendChild(img1Cate1);
+        
+        let img2Cate1 = document.createElement("img");
+        img2Cate1.src = 
+        Categoria1.appendChild(img2Cate1);
+        
+        let img3Cate1 = document.createElement("img");
+        img3Cate1.src = 
+        Categoria1.appendChild(img3Cate1);
+        
+        let img4Cate1 = document.createElement("img");
+        img4Cate1.src = 
+        Categoria1.appendChild(img4Cate1);
+        
+        let img5Cate1 = document.createElement("img");
+        img5Cate1.src = 
+        Categoria1.appendChild(img5Cate1);
+        
+        let img6Cate1 = document.createElement("img");
+        img6Cate1.src = 
+        Categoria1.appendChild(img6Cate1);
+    
+
+        let divCategoria2 = document.createElement("div")
+    categories.appendChild(divCategoria2);
+    
+        let Categoria2=document.createElement("div")
+        divCategoria2.appendChild(Categoria2);
+        
+        let img1Cate2 = document.createElement("img");
+        img1Cate2.src = 
+        Categoria2.appendChild(img1Cate2);
+        
+        let img2Cate2 = document.createElement("img");
+        img2Cate2.src = 
+        Categoria2.appendChild(img2Cate2);
+        
+        let img3Cate2 = document.createElement("img");
+        img3Cate2.src = 
+        Categoria2.appendChild(img3Cate2);
+        
+        let img4Cate2 = document.createElement("img");
+        img4Cate2.src = 
+        Categoria2.appendChild(img4Cate2);
+        
+        let img5Cate2 = document.createElement("img");
+        img5Cate1.src = 
+        Categoria2.appendChild(img1Cate2);
+        
+        let img6Cate2 = document.createElement("img");
+        img6Cate1.src = 
+        Categoria2.appendChild(img1Cate2);
+    })
+    
+
+
+
+// logic v2
+
+fetch('http://localhost:3000/users')
+                .then(response => response.json())
+                .then(data => {
+                    allPosts = data.flatMap(user => user.posts);
+
+                    allPosts.forEach(post => {
+                        if (post.id === postElement.id) {
+                            console.log(post);
+
+                        }
+                    })
+                });
