@@ -156,17 +156,19 @@ hr {
 }
 
 .gallery .grid-item {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 0.3s;
 }
 
 .gallery .grid-item:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
+    filter: brightness(0.8);
+    transform: scale(1.01);
 }
 
 .gallery .grid-item:nth-child(3n - 2) {

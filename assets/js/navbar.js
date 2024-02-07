@@ -18,22 +18,32 @@ function activeBars() {
 }
 
 // Login user
+const userLogin = document.querySelector(".navbar-login-a");
+const userLoginMenu = document.querySelector(".navbar-login-menu");
+const userProfile = document.querySelector(".navbar-profile-a");
+const userProfileMenu = document.querySelector(".navbar-profile-menu");
+const signOut = document.querySelector(".navbar-signout")
+const signOutMenu = document.querySelector(".navbar-signout-menu");
 
 if (localStorage.id) {
 
     // Login btn
-
-    const userLogin = document.querySelector(".navbar-login-a");
-    userLogin.style.display = "none";
-    const userLoginMenu = document.querySelector(".navbar-login-menu");
-    userLoginMenu.style.display = "none";
+    if (userLogin) {
+        userLogin.style.display = "none";
+        userLoginMenu.style.display = "none";
+    }
 
     // Profile btn
+    if (userProfile) {
+        userProfile.style.display = "flex";
+        userProfileMenu.style.display = "flex";
+    }
 
-    const userProfile = document.querySelector(".navbar-profile-a");
-    userProfile.style.display = "flex";
-    const userProfileMenu = document.querySelector(".navbar-profile-menu");
-    userProfileMenu.style.display = "flex";
+    // Sign Out
+    if (signOut) {
+        signOut.style.display = "flex";
+        signOutMenu.style.display = "flex";
+    }
 
     fetch(`http://localhost:3000/users/${localStorage.id}`)
         .then(response => {
@@ -53,7 +63,7 @@ if (localStorage.id) {
     const userLogin = document.querySelector(".navbar-login-a");
     userLogin.style.display = "flex";
     const userLoginMenu = document.querySelector(".navbar-login-menu");
-    userLoginMenu.style.display = "flex";
+    userLoginMenu.style.display = "block";
 
     // Profile btn
 
@@ -61,4 +71,16 @@ if (localStorage.id) {
     userProfile.style.display = "none";
     const userProfileMenu = document.querySelector(".navbar-profile-menu");
     userProfileMenu.style.display = "none";
+
+    // Sign Out
+
+    const signOut = document.querySelector(".navbar-signout")
+    signOut.style.display = "none";
+    const signOutMenu = document.querySelector(".navbar-signout-menu");
+    userLoginMenu.style.display = "none";
 }
+
+signOut.addEventListener("click", () => {
+    localStorage.clear();
+    location.href = "../index.html"
+})

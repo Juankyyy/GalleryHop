@@ -279,7 +279,7 @@ a {
     .navbar-profile-a,
     .navbar-login-a,
     .navbar-submit-a {
-        display: none;
+        display: none !important;
     }
 
     .navbar-profile-menu {
