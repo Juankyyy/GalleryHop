@@ -133,7 +133,7 @@ a {
 }
 
 .slider img {
-    cursor: zoom-in;
+    cursor: pointer;
     width: 300px;
     height: 200px;
     border-radius: 5px;
@@ -144,6 +144,33 @@ a {
 .slider img:hover {
     filter: brightness(0.8);
 }
+
+.slider-last {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-last-text {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.slider :nth-last-child(1) img:hover{
+    filter: brightness(0.5);
+}
+
+.slider-last:hover .slider-last-text {
+    left: 50%;
+}   
+
 
 /* --- --- --- MEDIA Q --- --- --- */
 @media (max-width: 1000px) {
@@ -162,6 +189,10 @@ a {
 
     .quoute h1 {
         font-size: 16px;
+    }
+
+    .slider-last-text {
+        font-size: 17px;
     }
 
     /* --- CATEGORIES --- */
