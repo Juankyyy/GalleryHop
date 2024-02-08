@@ -34,7 +34,11 @@ a {
     gap: 20px;
     height: 94dvh;
     position: relative;
-    z-index: -2;
+    z-index: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
 }
 
 .logo-text img {
