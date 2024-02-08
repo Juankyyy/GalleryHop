@@ -118,6 +118,8 @@ a {
 }
 
 .subtitle {
+    font-size: 17px;
+    font-weight: bold;
     align-self: flex-start;
 }
 
@@ -126,6 +128,8 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
+    padding: 10px 0px;
+    border-top: 2px solid #fff;
 }
 
 .slider img {

@@ -257,13 +257,13 @@ dark.addEventListener("click", () => {
 
 darkMenu.addEventListener("click", () => {
     count++;
-    
+
     if (count % 2 == 0) {
         theme = "dark";
     } else {
         theme = "light";
     }
-    
+
     localStorage.setItem("theme", theme)
     localStorage.setItem("contTheme", count);
     assignTheme();
@@ -272,10 +272,12 @@ darkMenu.addEventListener("click", () => {
 function assignTheme() {
     if (localStorage.theme == "dark") {
         body.className = "dark";
+        dark.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 26 26"><g fill="none"><defs><mask id="IconifyId18d84db4a3438e989116"><path fill="#fff" d="M0 0h26v26H0z"/><g fill="#000"><path fill-rule="evenodd" d="M13 17a4 4 0 1 0 0-8a4 4 0 0 0 0 8m0-6a2 2 0 1 1 0 4a2 2 0 0 1 0-4" clip-rule="evenodd"/><path d="M3.5 13a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1m15 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1M17 17a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 1 1-1.414 1.414L17 18.414A1 1 0 0 1 17 17M6 6a1 1 0 0 1 1.414 0l1.414 1.414a1 1 0 1 1-1.414 1.414L6 7.414A1 1 0 0 1 6 6m7 12.5a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1m0-15a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1M19.828 6a1 1 0 0 1 0 1.414l-1.414 1.414A1 1 0 1 1 17 7.414L18.414 6a1 1 0 0 1 1.414 0m-11 12.414l-1.414 1.414A1 1 0 1 1 6 18.414L7.414 17a1 1 0 0 1 1.414 1.414"/></g></mask></defs><circle cx="13" cy="13" r="13" fill="#ffffff" mask="url(#IconifyId18d84db4a3438e989116)"/></g></svg>`;
         imgGH.src = "./assets/img/GHTextWhite.png"
         particlesDark();
     } else {
         body.className = "light";
+        dark.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"><defs><mask id="IconifyId18d48472522e626080"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"><path fill="#fff" stroke="#fff" d="m24.003 4l5.27 5.27h9.457v9.456l5.27 5.27l-5.27 5.278v9.456h-9.456L24.004 44l-5.278-5.27H9.27v-9.456L4 23.997l5.27-5.27V9.27h9.456z" /><path fill="#000" stroke="#000" d="M27 17c0 8-5 9-10 9c0 4 6.5 8 12 4s2-13-2-13" /></g></mask></defs><path fill="#ffffff" d="M0 0h48v48H0z" mask="url(#IconifyId18d48472522e626080)" /></svg>`
         imgGH.src = "./assets/img/GHText.png";
         particlesLight();
     }
@@ -283,98 +285,97 @@ function assignTheme() {
 
 // Slider logic
 
-let categories=document.getElementById("categories-content")
+let categories = document.getElementById("categories-content")
 
-fetch ("http://localhost:3000/users")
-.then((result)=>result.json())
-.then((data)=>{
+fetch("http://localhost:3000/users")
+    .then((result) => result.json())
+    .then((data) => {
 
-    for(let i in users.posts )
-    if (art_type=Acrilico) ;
-    const firstPost = firstUser.posts[0];
+        for (let i in users.posts)
+            if (art_type = Acrilico);
+        const firstPost = firstUser.posts[0];
 
-    let postImg = document.createElement("img");
-    postImg.src = firstPost.image;
-    postImg.alt = firstPost.name; 
-    modalContent.appendChild(postImg);
+        let postImg = document.createElement("img");
+        postImg.src = firstPost.image;
+        postImg.alt = firstPost.name;
+        modalContent.appendChild(postImg);
 
 
-    let divCategoria1 = document.createElement("div")
-    categories.appendChild(divCategoria1);
-    
-        let Categoria1=document.createElement("div")
+        let divCategoria1 = document.createElement("div")
+        categories.appendChild(divCategoria1);
+
+        let Categoria1 = document.createElement("div")
         divCategoria1.appendChild(Categoria1);
-        
+
         let img1Cate1 = document.createElement("img");
-        img1Cate1.src = 
-        Categoria1.appendChild(img1Cate1);
-        
+        img1Cate1.src =
+            Categoria1.appendChild(img1Cate1);
+
         let img2Cate1 = document.createElement("img");
-        img2Cate1.src = 
-        Categoria1.appendChild(img2Cate1);
-        
+        img2Cate1.src =
+            Categoria1.appendChild(img2Cate1);
+
         let img3Cate1 = document.createElement("img");
-        img3Cate1.src = 
-        Categoria1.appendChild(img3Cate1);
-        
+        img3Cate1.src =
+            Categoria1.appendChild(img3Cate1);
+
         let img4Cate1 = document.createElement("img");
-        img4Cate1.src = 
-        Categoria1.appendChild(img4Cate1);
-        
+        img4Cate1.src =
+            Categoria1.appendChild(img4Cate1);
+
         let img5Cate1 = document.createElement("img");
-        img5Cate1.src = 
-        Categoria1.appendChild(img5Cate1);
-        
+        img5Cate1.src =
+            Categoria1.appendChild(img5Cate1);
+
         let img6Cate1 = document.createElement("img");
-        img6Cate1.src = 
-        Categoria1.appendChild(img6Cate1);
-    
+        img6Cate1.src =
+            Categoria1.appendChild(img6Cate1);
+
 
         let divCategoria2 = document.createElement("div")
-    categories.appendChild(divCategoria2);
-    
-        let Categoria2=document.createElement("div")
+        categories.appendChild(divCategoria2);
+
+        let Categoria2 = document.createElement("div")
         divCategoria2.appendChild(Categoria2);
-        
+
         let img1Cate2 = document.createElement("img");
-        img1Cate2.src = 
-        Categoria2.appendChild(img1Cate2);
-        
+        img1Cate2.src =
+            Categoria2.appendChild(img1Cate2);
+
         let img2Cate2 = document.createElement("img");
-        img2Cate2.src = 
-        Categoria2.appendChild(img2Cate2);
-        
+        img2Cate2.src =
+            Categoria2.appendChild(img2Cate2);
+
         let img3Cate2 = document.createElement("img");
-        img3Cate2.src = 
-        Categoria2.appendChild(img3Cate2);
-        
+        img3Cate2.src =
+            Categoria2.appendChild(img3Cate2);
+
         let img4Cate2 = document.createElement("img");
-        img4Cate2.src = 
-        Categoria2.appendChild(img4Cate2);
-        
+        img4Cate2.src =
+            Categoria2.appendChild(img4Cate2);
+
         let img5Cate2 = document.createElement("img");
-        img5Cate1.src = 
-        Categoria2.appendChild(img1Cate2);
-        
+        img5Cate1.src =
+            Categoria2.appendChild(img1Cate2);
+
         let img6Cate2 = document.createElement("img");
-        img6Cate1.src = 
-        Categoria2.appendChild(img1Cate2);
+        img6Cate1.src =
+            Categoria2.appendChild(img1Cate2);
     })
-    
+
 
 
 
 // logic v2
 
 fetch('http://localhost:3000/users')
-                .then(response => response.json())
-                .then(data => {
-                    allPosts = data.flatMap(user => user.posts);
+    .then(response => response.json())
+    .then(data => {
+        allPosts = data.flatMap(user => user.posts);
 
-                    allPosts.forEach(post => {
-                        if (post.id === postElement.id) {
-                            console.log(post);
-
-                        }
-                    })
-                });
+        allPosts.forEach(post => {
+            if (post.id === postElement.id) {
+                console.log(post);
+            }
+        })
+    });
