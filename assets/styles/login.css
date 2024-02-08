@@ -7,61 +7,70 @@
     box-sizing: border-box;
 }
 
-body {
+a {
+    text-decoration: none;
     color: #fff;
-    background: #141C29;
 }
 
 .container-father {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    align-items: center;
+    position: relative;
+    width: 100dvw;
+    height: calc(100dvh - 80px);
+    margin-top: 20px;
 }
 
 .container {
-    display: flex;
-    gap: 10vw;
+    width: 50%;
 }
 
-.img-galery img {
-    height: 80px;
-    margin-bottom: 60px;
-}
-
-.img-logo img {
+.img-logo {
     position: absolute;
-    transform: scaleX(-1);
-    height: 90vh;
-    position: absolute;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
     z-index: -1;
 }
 
+.img-logo img {
+    transform: scaleX(-1);
+    width: 500px;
+}
+
+.wrapper input {
+    color: #fff;
+}
+
 .wrapper {
-    color: white;
+    color: #fff !important;
     position: relative;
     width: 350px;
     height: 450px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* border: 2px solid rgba(255, 255, 255, 0.5); */
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
+.wrapper-light,
+.wrapper-light input {
+    color: #000 !important;
+}
+
 .wrapper .form-box {
     width: 100%;
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .wrapper .login {
-    transition: transform 0.90s ease;
+    transition: transform 0.5s;
     transform: translateX(0);
 }
 
@@ -77,7 +86,7 @@ body {
 }
 
 .wrapper.active .register {
-    transition: transform 0.90s ease;
+    transition: transform 0.5s;
     transform: translateX(0);
 }
 
@@ -86,37 +95,37 @@ body {
     text-align: center;
 }
 
-input {
-    color: white;
-}
-
 .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid white;
-    margin: 30px 0;
+    margin: 20px 0px;
+    border-bottom: 2px solid #000;
+}
+
+.input-box-light {
+    border-bottom: 2px solid #fff;
+
 }
 
 .input-box .date {
-    color: white;
+    color: #fff;
 }
 
 .input-box label {
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 0px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: white;
-    font-weight: 500;
+    font-weight: bold;
     pointer-events: none;
     transition: 0.5s;
 }
 
 .input-box input:focus~label,
 .input-box input:valid~label {
-    top: -5px;
+    top: 5px;
 }
 
 .input-box input {
@@ -125,29 +134,27 @@ input {
     background: transparent;
     border: none;
     outline: none;
+    font-weight: bold;
 }
 
 .btn {
     width: 100%;
-    height: 45px;
-    background: #2D4263;
-    border: none;
+    padding: 5px 0px;
+    color: #fff;
+    background-color: #2D4263;
+    border: 3px solid #2D4263;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: white;
+    transition: all 0.3s;
 }
 
 .btn:hover {
-    transition: 0.90s;
-    font-size: 1.5em;
+    background-color: #0824508c;
 }
 
 .login-register {
-    font-size: 0.9em;
-    text-align: center;
-    font-weight: 500;
     margin: 25px 0 10px;
     display: flex;
     gap: 6px;
@@ -155,41 +162,43 @@ input {
     justify-content: center;
 }
 
-.login-register p a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #2D4263;
-}
-
-.login-register p a:hover {
+.link {
     cursor: pointer;
-    font-size: 20px;
+    font-weight: bold;
+    color: #003186;
+    transition: all 0.3s;
 }
 
-.accept-polity {
-    margin-bottom: 20px;
+.link:hover {
+    color: #004bce;
+
 }
 
-.accept-polity label {
+.accept-polity input {
+    margin-right: 10px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    align-items: center;
 }
 
 .login-register p a:hover {
     text-decoration: underline;
 }
 
-.accept-polity label a {
-    text-decoration: none;
-    color: #2D4263;
+.privacity {
+    display: flex;
+    justify-content: center;
+    color: #313d52;
+    transition: all 0.3s;
 }
 
-.accept-polity label a:hover {
-    text-decoration: underline;
+.privacity:hover {
+    color: #003186;
 }
 
-::-webkit-calendar-picker-indicator {
+.date {
+    font-size: 15px;
+}
+
+.date ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
@@ -204,9 +213,22 @@ input {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 930px) {
+    .container {
+        width: 75%;
+    }
+
+    .img-logo {
+        transform: translate(-20%, -50%);
+    }
+
+    .img-logo img {
+        width: 400px;
+    }
+}
+
+/* @media screen and (max-width: 1024px) {
     .container-father {
-        width: 100vw;
         height: auto;
         display: flex;
         justify-content: center;
@@ -297,12 +319,9 @@ input {
         margin-top: 20px;
         margin-left: 150px;
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
-
     .img-logo img {
         height: 70vh;
         width: 90vw;
@@ -317,6 +336,4 @@ input {
         margin-top: 20px;
         margin-left: 350px;
     }
-
-
-}
+} */

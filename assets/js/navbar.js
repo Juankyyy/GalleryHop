@@ -60,17 +60,21 @@ if (localStorage.id) {
 
     // Login btn
 
-    const userLogin = document.querySelector(".navbar-login-a");
-    userLogin.style.display = "flex";
-    const userLoginMenu = document.querySelector(".navbar-login-menu");
-    userLoginMenu.style.display = "block";
+    if (userLogin) {
+        const userLogin = document.querySelector(".navbar-login-a");
+        userLogin.style.display = "flex";
+        const userLoginMenu = document.querySelector(".navbar-login-menu");
+        userLoginMenu.style.display = "block";
+    }
 
     // Profile btn
 
-    const userProfile = document.querySelector(".navbar-profile-a");
-    userProfile.style.display = "none";
-    const userProfileMenu = document.querySelector(".navbar-profile-menu");
-    userProfileMenu.style.display = "none";
+    if (userProfile) {
+        const userProfile = document.querySelector(".navbar-profile-a");
+        userProfile.style.display = "none";
+        const userProfileMenu = document.querySelector(".navbar-profile-menu");
+        userProfileMenu.style.display = "none";
+    }
 
     // Sign Out
 
