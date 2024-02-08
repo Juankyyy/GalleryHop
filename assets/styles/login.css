@@ -164,12 +164,12 @@ a {
 .link {
     cursor: pointer;
     font-weight: bold;
-    color: #003186;
+    color: #1e61d4;
     transition: all 0.3s;
 }
 
 .link:hover {
-    color: #004bce;
+    color: #009ec5;
 }
 
 .register-title {

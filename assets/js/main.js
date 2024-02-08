@@ -230,6 +230,7 @@ function particlesDark() {
 
 const body = document.body
 const dark = document.querySelector(".navbar-dark");
+const darkMenu = document.querySelector(".navbar-dark-menu");
 const imgGH = document.querySelector(".logo-text-img");
 let theme;
 let count = localStorage.getItem("contTheme");
@@ -252,6 +253,20 @@ dark.addEventListener("click", () => {
     localStorage.setItem("theme", theme)
     localStorage.setItem("contTheme", count);
     assignTheme()
+})
+
+darkMenu.addEventListener("click", () => {
+    count++;
+    
+    if (count % 2 == 0) {
+        theme = "dark";
+    } else {
+        theme = "light";
+    }
+    
+    localStorage.setItem("theme", theme)
+    localStorage.setItem("contTheme", count);
+    assignTheme();
 })
 
 function assignTheme() {

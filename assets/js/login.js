@@ -180,6 +180,20 @@ dark.addEventListener("click", () => {
     assignTheme();
 })
 
+darkMenu.addEventListener("click", () => {
+    count++;
+    
+    if (count % 2 == 0) {
+        theme = "dark";
+    } else {
+        theme = "light";
+    }
+    
+    localStorage.setItem("theme", theme)
+    localStorage.setItem("contTheme", count);
+    assignTheme();
+})
+
 function assignTheme() {
     if(localStorage.theme == "dark") {
         logo.src = "../assets/img/LogoWhite.png"
