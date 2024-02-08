@@ -51,14 +51,14 @@
           "votes": "789"
         },
         {
-          "id": "5d5",
-          "image": "../assets/img/creations/Oleo2.jpg",
-          "name": "Oleo2",
-          "post_date": "03-01-2024",
-          "description": "Captura fotográfica que revela la esencia de la vida urbana, con sus contrastes y diversidad.",
-          "price": "65",
-          "art_type": "Óleo",
-          "votes": "432"
+          "id": "w3x4",
+          "image": "../assets/img/creations/Ink5.jpg",
+          "name": "Ink5",
+          "post_date": "27-03-2026",
+          "description": "Explora los ecos del pasado en esta obra maestra única.",
+          "price": 88.6,
+          "art_type": "Tinta",
+          "votes": 321
         },
         {
           "id": "6e6",
@@ -117,7 +117,7 @@
           "post_date": "25-06-2023",
           "description": "Expresión contemporánea que desafía las normas, provocando reflexión y asombro.",
           "price": "95",
-          "art_type": "Graffiti",
+          "art_type": "Grafitti",
           "votes": "765"
         },
         {
@@ -259,7 +259,7 @@
           "post_date": "08-05-2024",
           "description": "Detalle realista que revela la belleza en lo ordinario, capturando momentos fugaces.",
           "price": "80",
-          "art_type": "Graffiti",
+          "art_type": "Grafitti",
           "votes": "987"
         },
         {
@@ -371,7 +371,7 @@
           "post_date": "05-06-2024",
           "description": "Detalle realista que captura la esencia de la realidad con una precisión asombrosa.",
           "price": "80",
-          "art_type": "Graffiti",
+          "art_type": "Grafitti",
           "votes": "987"
         },
         {
@@ -433,7 +433,7 @@
           "post_date": "05-11-2023",
           "description": "Exploración digital que fusiona la realidad y la fantasía en una experiencia visual única.",
           "price": "70",
-          "art_type": "Mixto",
+          "art_type": "Mixta",
           "votes": "432"
         },
         {
@@ -455,6 +455,16 @@
           "price": "85",
           "art_type": "Pastel",
           "votes": "654"
+        },
+        {
+          "id": "1p17",
+          "image": "../assets/img/creations/bronce1.jpg",
+          "name": "bronce1",
+          "post_date": "07-04-2023",
+          "description": "Experimentación artística que desafía las convenciones, fusionando materiales de manera única.",
+          "price": "45",
+          "art_type": "Fundición de bronce",
+          "votes": "321"
         },
         {
           "id": "43p43",
@@ -565,7 +575,7 @@
           "post_date": "06-12-2023",
           "description": "Exploración digital que fusiona la realidad y la fantasía en una experiencia visual única.",
           "price": "70",
-          "art_type": "Mixto",
+          "art_type": "Mixta",
           "votes": "432"
         },
         {
@@ -576,6 +586,16 @@
           "description": "Captura fotográfica que revela la esencia de la vida urbana, con sus contrastes y diversidad.",
           "price": "40",
           "art_type": "Óleo",
+          "votes": "321"
+        },
+        {
+          "id": "5z53",
+          "image": "../assets/img/creations/edicion1.jpg",
+          "name": "Oedicion1",
+          "post_date": "11-08-2023",
+          "description": "Captura fotográfica que revela la esencia de la vida urbana, con sus contrastes y diversidad.",
+          "price": "40",
+          "art_type": "Edición fotográfica",
           "votes": "321"
         },
         {
@@ -687,7 +707,7 @@
           "post_date": "25-02-2024",
           "description": "Explora realidades alternativas a través de esta pintura intrigante.",
           "price": 120.3,
-          "art_type": "Mixto",
+          "art_type": "Mixta",
           "votes": 876
         },
         {
@@ -809,7 +829,7 @@
           "post_date": "04-12-2023",
           "description": "Explora una variedad de emociones a través de retratos expresivos.",
           "price": 140.6,
-          "art_type": "Mixto",
+          "art_type": "Mixta",
           "votes": 3210
         },
         {
@@ -861,6 +881,16 @@
           "price": 88.2,
           "art_type": "Arcilla",
           "votes": 2345
+        },
+        {
+          "id": "kl3m4",
+          "image": "../assets/img/creations/Acuarela1.jpg",
+          "name": "Acuarela1",
+          "post_date": "29-12-2025",
+          "description": "Experimenta con vibraciones geométricas en esta obra abstracta.",
+          "price": 95.75,
+          "art_type": "Acuarela",
+          "votes": 9876
         },
         {
           "id": "nop5",
@@ -941,7 +971,7 @@
           "post_date": "26-12-2023",
           "description": "Explora un universo abstracto a través de esta fascinante pintura.",
           "price": 120.3,
-          "art_type": "Graffiti",
+          "art_type": "Grafitti",
           "votes": 2109
         },
         {
@@ -981,7 +1011,7 @@
           "post_date": "26-04-2025",
           "description": "Expresiones artísticas que reflejan la vida urbana contemporánea.",
           "price": 88.75,
-          "art_type": "Mixto",
+          "art_type": "Mixta",
           "votes": 765
         },
         {
@@ -1047,6 +1077,16 @@
           "votes": 1098
         },
         {
+          "id": "k1m4",
+          "image": "../assets/img/creations/arcilla1.jpg",
+          "name": "arcilla1",
+          "post_date": "21-04-2021",
+          "description": "Misteriosas visiones artísticas que se revelan en la oscuridad.",
+          "price": 88.2,
+          "art_type": "Arcilla",
+          "votes": 2345
+        },
+        {
           "id": "y1za9",
           "image": "../assets/img/creations/Carboncillo5.jpg",
           "name": "Carboncillo5",
@@ -1103,7 +1143,7 @@
           "post_date": "28-01-2025",
           "description": "Experimenta con vibraciones abstractas en esta obra única.",
           "price": 88.2,
-          "art_type": "Graffiti",
+          "art_type": "Grafitti",
           "votes": 5432
         },
         {
@@ -1143,7 +1183,7 @@
           "post_date": "09-04-2026",
           "description": "La geometría cobra vida en esta expresión artística abstracta.",
           "price": 130.9,
-          "art_type": "Mixto",
+          "art_type": "Mixta",
           "votes": 210
         },
         {
@@ -1265,7 +1305,7 @@
           "post_date": "02-12-2025",
           "description": "La abstracción cobra vida en un caleidoscopio de formas y colores.",
           "price": 120.9,
-          "art_type": "Graffiti",
+          "art_type": "Grafitti",
           "votes": 7654
         },
         {
