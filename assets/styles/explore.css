@@ -195,8 +195,8 @@ hr {
 /*  Modale style */
 
 .container-modal {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.728);
     position: absolute;
     top: 0;
@@ -209,7 +209,7 @@ hr {
 .container-modal .modal {
     width: 700px;
     height: 500px;
-    background-color: aliceblue;
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -224,7 +224,6 @@ hr {
 .modal-content .modal-img {
     width: 60%;
     height: 100%;
-    background-color: #2A4250;
 }
 
 .modal-img img {
@@ -236,5 +235,51 @@ hr {
     width: 40%;
     height: 100%;
     color: white;
-    background-color: #2a502a;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.modal-info .info-modal {
+    margin-bottom: 120px;
+}
+
+.info-modal .title-modal {
+    margin-bottom: 5px;
+    color: #114a6d;
+}
+
+.price-cont {
+    display: flex;
+    align-items: center;
+}
+
+.price-cont .title-modal {
+    margin-right: 5px;
+    color: #114a6d;
+}
+
+.modal-info .btn-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #122733;
+    border: 3px solid #2A4250;
+    border-radius: 5px;
+    padding: 5px 10px;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-buy svg {
+    transition: all 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #306743;
+    border: 3px solid #12331b;
+
 }
