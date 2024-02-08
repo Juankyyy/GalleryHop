@@ -143,6 +143,16 @@
       "money": 10,
       "posts": [
         {
+          "id": "58e58",
+          "image": "../assets/img/creations/Acrilico5.jpg",
+          "name": "Acrilico5",
+          "post_date": "10-01-2024",
+          "description": "Manifestación artística que desafía las convenciones, invitando a la reflexión profunda.",
+          "price": "95",
+          "art_type": "Acrilico",
+          "votes": "765"
+        },
+        {
           "id": "13l13",
           "image": "../assets/img/creations/3dart2.jpg",
           "name": "3dart2",
@@ -274,26 +284,6 @@
       "birthday": "26-12-2002",
       "money": 35,
       "posts": [
-        {
-          "id": "25x25",
-          "image": "../assets/img/creations/3dart3.jpg",
-          "name": "3dart3",
-          "post_date": "01-08-2023",
-          "description": "Una inmersión en lo abstracto, donde los colores y las formas se entrelazan en armonía.",
-          "price": "75",
-          "art_type": "Arte 3D",
-          "votes": "567"
-        },
-        {
-          "id": "26y26",
-          "image": "../assets/img/creations/Acrilico3.jpg",
-          "name": "Acrilico3",
-          "post_date": "14-11-2023",
-          "description": "Pintura expresiva que despierta emociones y desafía las expectativas.",
-          "price": "90",
-          "art_type": "Acrilico",
-          "votes": "789"
-        },
         {
           "id": "27z27",
           "image": "../assets/img/creations/Acuarela3.jpg",
@@ -529,11 +519,11 @@
       ]
     },
     {
-      "id": "52c9",
-      "username": "esteban",
+      "id": "5c9",
+      "username": "Mateo",
       "imguser": "https://avatars.githubusercontent.com/u/103221572?v=4",
-      "password": "estebanelr25",
-      "email": "estebanhenao0414@gmail.com",
+      "password": "mateo123456",
+      "email": "mateo02@gmail.com",
       "phone": "3167689451",
       "birthday": "30-08-1997",
       "money": 0,
@@ -627,16 +617,6 @@
           "price": "70",
           "art_type": "Arte 3D",
           "votes": "432"
-        },
-        {
-          "id": "58e58",
-          "image": "../assets/img/creations/Acrilico5.jpg",
-          "name": "Acrilico5",
-          "post_date": "10-01-2024",
-          "description": "Manifestación artística que desafía las convenciones, invitando a la reflexión profunda.",
-          "price": "95",
-          "art_type": "Acrilico",
-          "votes": "765"
         },
         {
           "id": "59f59",
@@ -793,7 +773,7 @@
       "money": 0,
       "posts": [
         {
-          "id": "mno5",
+          "id": "m2no5",
           "image": "../assets/img/creations/Ink4.jpg",
           "name": "Ink4",
           "post_date": "16-02-2023",
@@ -803,7 +783,7 @@
           "votes": 5432
         },
         {
-          "id": "pqr6",
+          "id": "p3qr6",
           "image": "../assets/img/creations/Lapicesdecolores4.jpg",
           "name": "Lapicesdecolores4",
           "post_date": "08-05-2023",
@@ -813,7 +793,7 @@
           "votes": 2109
         },
         {
-          "id": "stu7",
+          "id": "s4tu7",
           "image": "../assets/img/creations/madera4.jpg",
           "name": "madera4",
           "post_date": "22-08-2023",
@@ -823,7 +803,7 @@
           "votes": 8765
         },
         {
-          "id": "vwx8",
+          "id": "vw4x8",
           "image": "../assets/img/creations/mix4.jpg",
           "name": "mix4",
           "post_date": "04-12-2023",
@@ -833,7 +813,7 @@
           "votes": 3210
         },
         {
-          "id": "yza9",
+          "id": "yz2a9",
           "image": "../assets/img/creations/Oleo4.jpg",
           "name": "Oleo4",
           "post_date": "19-03-2024",
@@ -843,7 +823,7 @@
           "votes": 4321
         },
         {
-          "id": "bcd1",
+          "id": "1bcd1",
           "image": "../assets/img/creations/Pastel4.jpg",
           "name": "Pastel4",
           "post_date": "27-06-2024",
@@ -853,7 +833,7 @@
           "votes": 9876
         },
         {
-          "id": "efg2",
+          "id": "ef3g2",
           "image": "../assets/img/creations/piedra4.jpg",
           "name": "piedra4",
           "post_date": "14-09-2024",
@@ -863,7 +843,7 @@
           "votes": 765
         },
         {
-          "id": "hij3",
+          "id": "hi3j3",
           "image": "../assets/img/creations/Temple4.jpg",
           "name": "Temple4",
           "post_date": "02-01-2025",
@@ -873,7 +853,7 @@
           "votes": 1098
         },
         {
-          "id": "klm4",
+          "id": "k1lm4",
           "image": "../assets/img/creations/arcilla6.jpg",
           "name": "arcilla6",
           "post_date": "21-04-2025",
@@ -925,7 +905,7 @@
       "money": 0,
       "posts": [
         {
-          "id": "efg2",
+          "id": "efgg2",
           "image": "../assets/img/creations/edicion4.jpg",
           "name": "edicion4",
           "post_date": "02-03-2023",
@@ -935,7 +915,7 @@
           "votes": 8765
         },
         {
-          "id": "hij3",
+          "id": "h6ij3",
           "image": "../assets/img/creations/fotografia4.jpg",
           "name": "fotografia4",
           "post_date": "20-06-2023",
@@ -945,7 +925,7 @@
           "votes": 3210
         },
         {
-          "id": "klm4",
+          "id": "klm49",
           "image": "../assets/img/creations/Gouache4.jpg",
           "name": "Gouache4",
           "post_date": "07-09-2023",
@@ -955,7 +935,7 @@
           "votes": 5432
         },
         {
-          "id": "nop5",
+          "id": "n5op5",
           "image": "../assets/img/creations/graffiti4.jpg",
           "name": "graffiti4",
           "post_date": "26-12-2023",
@@ -965,7 +945,7 @@
           "votes": 2109
         },
         {
-          "id": "qrs6",
+          "id": "8qrs6",
           "image": "../assets/img/creations/Grafito4.jpg",
           "name": "Grafito4",
           "post_date": "13-03-2024",
@@ -995,7 +975,7 @@
           "votes": 9876
         },
         {
-          "id": "bcd1",
+          "id": "bc1d1",
           "image": "../assets/img/creations/mix5.jpg",
           "name": "mix5",
           "post_date": "26-04-2025",
@@ -1005,7 +985,7 @@
           "votes": 765
         },
         {
-          "id": "efg2",
+          "id": "e9fg2",
           "image": "../assets/img/creations/Oleo5.jpg",
           "name": "Oleo5",
           "post_date": "14-08-2025",
@@ -1015,7 +995,7 @@
           "votes": 2345
         },
         {
-          "id": "hij3",
+          "id": "h8ij3",
           "image": "../assets/img/creations/Pastel5.jpg",
           "name": "Pastel5",
           "post_date": "02-12-2025",
@@ -1025,7 +1005,7 @@
           "votes": 543
         },
         {
-          "id": "klm4",
+          "id": "6klm4",
           "image": "../assets/img/creations/piedra5.jpg",
           "name": "piedra5",
           "post_date": "21-03-2026",
@@ -1057,7 +1037,7 @@
       "money": 0,
       "posts": [
         {
-          "id": "vwx8",
+          "id": "vw7x8",
           "image": "../assets/img/creations/bronce5.jpg",
           "name": "bronce5",
           "post_date": "12-04-2023",
@@ -1067,7 +1047,7 @@
           "votes": 1098
         },
         {
-          "id": "yza9",
+          "id": "y1za9",
           "image": "../assets/img/creations/Carboncillo5.jpg",
           "name": "Carboncillo5",
           "post_date": "30-07-2023",
@@ -1077,7 +1057,7 @@
           "votes": 765
         },
         {
-          "id": "bcd1",
+          "id": "bc6d1",
           "image": "../assets/img/creations/digital5.jpg",
           "name": "digital5",
           "post_date": "17-11-2023",
@@ -1087,7 +1067,7 @@
           "votes": 2345
         },
         {
-          "id": "efg2",
+          "id": "e2fg2",
           "image": "../assets/img/creations/edicion5.jpg",
           "name": "edicion5",
           "post_date": "04-03-2024",
@@ -1097,7 +1077,7 @@
           "votes": 876
         },
         {
-          "id": "hij3",
+          "id": "hij93",
           "image": "../assets/img/creations/fotografia5.jpg",
           "name": "fotografia5",
           "post_date": "22-06-2024",
@@ -1107,7 +1087,7 @@
           "votes": 4321
         },
         {
-          "id": "klm4",
+          "id": "k4lm4",
           "image": "../assets/img/creations/Gouache5.jpg",
           "name": "Gouache5",
           "post_date": "09-10-2024",
@@ -1117,7 +1097,7 @@
           "votes": 2109
         },
         {
-          "id": "nop5",
+          "id": "no7p5",
           "image": "../assets/img/creations/graffiti5.jpg",
           "name": "graffiti5",
           "post_date": "28-01-2025",
@@ -1127,7 +1107,7 @@
           "votes": 5432
         },
         {
-          "id": "qrs6",
+          "id": "q7rs6",
           "image": "../assets/img/creations/Grafito5.jpg",
           "name": "Grafito5",
           "post_date": "17-05-2025",
@@ -1137,7 +1117,7 @@
           "votes": 9876
         },
         {
-          "id": "tuv7",
+          "id": "tu4v7",
           "image": "../assets/img/creations/Lapicesdecolores6.jpg",
           "name": "Lapicesdecolores6",
           "post_date": "04-09-2025",
@@ -1147,7 +1127,7 @@
           "votes": 3210
         },
         {
-          "id": "wxy8",
+          "id": "wx4y8",
           "image": "../assets/img/creations/madera6.jpg",
           "name": "madera6",
           "post_date": "22-12-2025",
@@ -1157,7 +1137,7 @@
           "votes": 8765
         },
         {
-          "id": "zab9",
+          "id": "z8ab9",
           "image": "../assets/img/creations/mix6.jpg",
           "name": "mix6",
           "post_date": "09-04-2026",
@@ -1179,7 +1159,7 @@
       ]
     },
     {
-      "id": "a1b2",
+      "id": "a13b2",
       "username": "Fernando Jose",
       "imguser": "https://avatars.githubusercontent.com/u/141048801?v=4",
       "password": "fernandol3",
