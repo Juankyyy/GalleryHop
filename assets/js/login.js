@@ -25,44 +25,44 @@ let avisoLogIn = document.getElementById("avisoLogIn");
 
 btnLogin.addEventListener("click", function () {
     fetch("http://localhost:3000/users")
-    .then(response => {
-        return response.json();
-    }).then(data => {
-        let user = data.find(element => {
-            return element.username === username.value && element.password === password.value;
+        .then(response => {
+            return response.json();
+        }).then(data => {
+            let user = data.find(element => {
+                return element.username === username.value && element.password === password.value;
+            });
+
+            if (user) {
+                avisoLogIn.innerHTML = "";
+
+                localStorage.setItem('id', user.id);
+
+                // --- --- --- TOASTIFY --- --- ---
+                Toastify({
+                    text: "Se ha iniciado sesión correctamente",
+                    className: "toastifyGood",
+                    style: {
+                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    },
+                    newWindow: true,
+                    gravity: "bottom",
+                    position: "center",
+                }).showToast();
+
+                location.href = "../index.html";
+            } else {
+                // --- --- --- TOASTIFY --- --- ---
+                Toastify({
+                    text: "Tus credenciales son incorrectas :(",
+                    className: "toastifyBad",
+                    style: {
+                        background: "linear-gradient(90deg, rgba(255,66,66,1) 0%, rgba(219,0,0,1) 100%)",
+                    },
+                    gravity: "bottom",
+                    position: "center",
+                }).showToast();
+            }
         });
-
-        if (user) {
-            avisoLogIn.innerHTML = "";
-
-            localStorage.setItem('id', user.id);
-
-            // --- --- --- TOASTIFY --- --- ---
-            Toastify({
-                text: "Se ha iniciado sesión correctamente",
-                className: "toastifyGood",
-                style: {
-                    background: "linear-gradient(to right, #00b09b, #96c93d)",
-                },
-                newWindow: true,
-                gravity: "bottom",
-                position: "center",
-            }).showToast();
-
-            location.href = "../index.html";
-        } else {
-            // --- --- --- TOASTIFY --- --- ---
-            Toastify({
-                text: "Tus credenciales son incorrectas :(",
-                className: "toastifyBad",
-                style: {
-                    background: "linear-gradient(90deg, rgba(255,66,66,1) 0%, rgba(219,0,0,1) 100%)",
-                },
-                gravity: "bottom",
-                position: "center",
-            }).showToast();
-        }
-    });
 });
 
 
@@ -70,71 +70,72 @@ btnLogin.addEventListener("click", function () {
 // --- --- --- REGISTER --- --- ---
 let btnRegistro = document.getElementById("btnRegistro");
 
-btnRegistro.addEventListener("click", function() {
-    let nombreRegistro = document.getElementById("name-input-signup").value; 
-    let emailRegistro = document.getElementById("email-input-signup").value; 
-    let passwordRegistro = document.getElementById("password-input-signup").value; 
-    let phoneRegistro = document.getElementById("phone-input-signup").value; 
-    let dateRegistro = document.getElementById("date-input-signup").value; 
+btnRegistro.addEventListener("click", function () {
+    let nombreRegistro = document.getElementById("name-input-signup").value;
+    let emailRegistro = document.getElementById("email-input-signup").value;
+    let passwordRegistro = document.getElementById("password-input-signup").value;
+    let phoneRegistro = document.getElementById("phone-input-signup").value;
+    let dateRegistro = document.getElementById("date-input-signup").value;
     let checkbox = document.getElementById("checkbox").checked;
     let avisoSignUp = document.getElementById("avisoSignUp");
 
     if (checkbox) {
         fetch('http://localhost:3000/users')
-        .then(response => response.json())
-        .then(data => {
-            let ussernameExistent = data.find(users => users.username === nombreRegistro);
+            .then(response => response.json())
+            .then(data => {
+                let ussernameExistent = data.find(users => users.username === nombreRegistro);
 
-            if (ussernameExistent) {
-                avisoSignUp.innerHTML = "Lo sentimos, pero ese nombre de usuario ya existe.";
-            } else {
-                let emailExistent = data.find(users => users.email === emailRegistro);
-
-                if (emailExistent) {
-                    avisoSignUp.innerHTML = "Lo sentimos, pero este correo ya está registrado.";
+                if (ussernameExistent) {
+                    avisoSignUp.innerHTML = "Lo sentimos, pero ese nombre de usuario ya existe.";
                 } else {
-                    fetch('http://localhost:3000/users', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({ 
-                            username: nombreRegistro, 
-                            password: passwordRegistro, 
-                            email: emailRegistro, 
-                            phone: phoneRegistro, 
-                            birthday: dateRegistro, 
-                            money: 0, 
-                            posts: []
-                        })
-                    }).then(response => response.json())
-                    .then(data => {
-                        console.log('Usuario registrado como:', data);
+                    let emailExistent = data.find(users => users.email === emailRegistro);
 
-                        // --- --- --- TOASTIFY --- --- ---
-                        Toastify({
-                            text: "Se ha registrado correctamente :)",
-                            className: "toastifyGood",
-                            style: {
-                                background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    if (emailExistent) {
+                        avisoSignUp.innerHTML = "Lo sentimos, pero este correo ya está registrado.";
+                    } else {
+                        fetch('http://localhost:3000/users', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
                             },
-                            gravity: "bottom",
-                            position: "center",
-                        }).showToast();
+                            body: JSON.stringify({
+                                username: nombreRegistro,
+                                imguser: "../assets/img/VsProfile.png",
+                                password: passwordRegistro,
+                                email: emailRegistro,
+                                phone: phoneRegistro,
+                                birthday: dateRegistro,
+                                money: 0,
+                                posts: []
+                            })
+                        }).then(response => response.json())
+                            .then(data => {
+                                console.log('Usuario registrado como:', data);
 
-                        avisoSignUp.innerHTML = "";
-                        
-                        location.href = "../index.html";
-                        
-                        nombreRegistro = '';
-                        passwordRegistro = '';
-                        emailRegistro = '';
-                        phoneRegistro = '';
-                        dateRegistro = '';
-                    });
+                                // --- --- --- TOASTIFY --- --- ---
+                                Toastify({
+                                    text: "Se ha registrado correctamente :)",
+                                    className: "toastifyGood",
+                                    style: {
+                                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                                    },
+                                    gravity: "bottom",
+                                    position: "center",
+                                }).showToast();
+
+                                avisoSignUp.innerHTML = "";
+
+                                location.href = "../index.html";
+
+                                nombreRegistro = '';
+                                passwordRegistro = '';
+                                emailRegistro = '';
+                                phoneRegistro = '';
+                                dateRegistro = '';
+                            });
+                    }
                 }
-            }
-        });
+            });
     } else {
         // --- --- --- TOASTIFY --- --- ---
         Toastify({
