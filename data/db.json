@@ -559,16 +559,6 @@
           "votes": "567"
         },
         {
-          "id": "51x51",
-          "image": "../assets/img/creations/madera2.jpg",
-          "name": "madera2",
-          "post_date": "14-05-2024",
-          "description": "Escultura que explora la conexión entre la forma humana y el entorno circundante.",
-          "price": "95",
-          "art_type": "Talla en madera",
-          "votes": "890"
-        },
-        {
           "id": "52y52",
           "image": "../assets/img/creations/mix2.jpg",
           "name": "mix2",
@@ -1329,6 +1319,17 @@
           "votes": 987
         }
       ]
+    },
+    {
+      "id": "6334",
+      "username": "David",
+      "imguser": "../assets/img/VsProfile.png",
+      "password": "1234",
+      "email": "davidherrera@hotmail.com",
+      "phone": "3203320320",
+      "birthday": "2023-12-05",
+      "money": 0,
+      "posts": []
     }
   ],
   "favorites": [

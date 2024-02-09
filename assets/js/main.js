@@ -283,17 +283,58 @@ function assignTheme() {
     }
 }
 
-// logic v2
+// Consumo de la api para traer las imagenes de una categoria
 
 fetch('http://localhost:3000/users')
     .then(response => response.json())
     .then(data => {
         allPosts = data.flatMap(user => user.posts);
-        let art3dPost;
+        let art3dPost = [];
+        let artAcrylicPost = [];
+        let artDigitalPost = [];
+        let artPhotographyPost = [];
+
         allPosts.forEach(post => {
             if (post.art_type == "Arte 3D") {
-                art3dPost = post;
+                art3dPost.push(post);
             }
-
+            else if (post.art_type == "Acrilico") {
+                artAcrylicPost.push(post);
+            }
+            else if (post.art_type == "Ilustración digital") {
+                artDigitalPost.push(post);
+            }
+            else if (post.art_type == "Fotografia") {
+                artPhotographyPost.push(post);
+            }
         })
+
+        // Logica para cambiar las imagenes del slider
+
+        const imgSlider3dArt = document.querySelectorAll(".img-slider-3dArt");
+        const imgSliderAcrylic = document.querySelectorAll(".img-slider-Acrylic");
+        const imgSliderDigital = document.querySelectorAll(".img-slider-Digital");
+        const imgSliderPhotography = document.querySelectorAll(".img-slider-Photography");
+        let cont = 0;
+
+        imgSlider3dArt.forEach(art3d => {
+            art3d.setAttribute("src", art3dPost[cont].image);
+            cont++;
+        })
+        cont = 0;
+        imgSliderAcrylic.forEach(art3d => {
+            art3d.setAttribute("src", artAcrylicPost[cont].image);
+            cont++;
+        })
+        cont = 0;
+        imgSliderDigital.forEach(art3d => {
+            art3d.setAttribute("src", artDigitalPost[cont].image);
+            cont++;
+        })
+        cont = 0;
+        imgSliderPhotography.forEach(art3d => {
+            art3d.setAttribute("src", artPhotographyPost[cont].image);
+            cont++;
+        })
+        cont = 0;
     });
