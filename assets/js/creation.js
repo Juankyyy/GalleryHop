@@ -85,11 +85,30 @@ function processFile(file) {
         });
 
         fileReader.readAsDataURL(file);
+        uploadFile(file);
 
     } else {
         alert("No es un archivo valido")
     }
 };
+
+async function uploadFile(file) {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+        const res = await fetch("http://localhost:3001/", {
+            method: "POST",
+            body: formData,
+
+        });
+        const resText = await res.text();
+        console.log(response)
+    } catch (error) {
+
+    }
+
+}
 
 // Categories logic
 
@@ -177,7 +196,7 @@ let idUsser = localStorage.getItem('id');
 let categoriesArt = document.querySelectorAll('.category-art');
 
 categoriesArt.forEach(categoryArt => {
-    categoryArt.addEventListener('click', function(event) {
+    categoryArt.addEventListener('click', function (event) {
         event.preventDefault();
 
         categoryArt.forEach(otherCategoryArt => {
@@ -191,7 +210,7 @@ categoriesArt.forEach(categoryArt => {
 //Algoritmo para montar la publicación a la base de datos.
 let btnNewCreation = document.getElementById("btnNewCreation");
 
-btnNewCreation.addEventListener("click", function() {
+btnNewCreation.addEventListener("click", function () {
     let categorySelected = document.querySelector('.category-art.selected').id;
     let nameArtValue = nameArt.value;
     let descriptionArtValue = descriptionArt.value;
@@ -211,11 +230,11 @@ btnNewCreation.addEventListener("click", function() {
             },
             body: JSON.stringify(data)
         }).then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 });

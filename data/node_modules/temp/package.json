@@ -1,0 +1,30 @@
+{
+  "name": "temp",
+  "description": "Temporary files and directories",
+  "tags": [
+    "temporary",
+    "temp",
+    "tempfile",
+    "tempdir",
+    "tmpfile",
+    "tmpdir",
+    "security"
+  ],
+  "version": "0.5.1",
+  "author": "Bruce Williams <bruce@codefluency.com>",
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": [
+    "node >=0.8.0"
+  ],
+  "main": "./lib/temp",
+  "dependencies": {
+    "rimraf": "~2.1.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bruce/node-temp.git"
+  }
+}
