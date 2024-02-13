@@ -1,9 +1,22 @@
 # GalleryHop 🌃
 
 Explora el universo sin límites de la creatividad en **Gallery Hop**, donde cada obra es una historia única y cada artista encuentra su voz sin restricciones.
-#
 
+## Instalar DB 🛠️
 
+- Ir a la carpeta /data
+- Instalar json-server (por si acaso)
+
+```bash
+npm install json-server
+```
+
+- Ejecutar el servidor
+```bash
+npx json-server ./db.json
+```
+
+---
 
 ### **Desarrolladores** ✒️
 | **Juankyyy** | **Wilmar** | **Anthony** | **Amy** |
